@@ -1,0 +1,15 @@
+{
+    "name": "conversation-client",
+    "version": "0.1.0",
+    "description": "conversation-client",
+    "main": "app.js",
+    "scripts": {
+        "build": "node app.js",
+        "test": "standard",
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "restify": "^6.3.0",
+        "watson-developer-cloud": "^2.42.0"
+    }
+}
