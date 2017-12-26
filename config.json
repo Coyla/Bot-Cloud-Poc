@@ -1,0 +1,10 @@
+{
+	"watson" : {
+		"username" : "792501a3-8520-43cc-81c8-faeac9d59501",
+		"password" : "YePK3AQBWnVd",
+		"url" : "https://gateway.watsonplatform.net/conversation/api",
+		"version" : "v1",
+		"version_date" : "2017-05-26",
+		"workspace" : "7e5bd96d-987f-4716-8cfd-3ba0316cfc9c"
+	}
+}

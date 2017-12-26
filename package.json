@@ -9,7 +9,8 @@
         "start": "node app.js"
     },
     "dependencies": {
-        "restify": "^6.3.0",
-        "watson-developer-cloud": "^2.42.0"
+        "aiml-high": "0.0.8",
+        "restify": "^6.3.4",
+        "watson-developer-cloud": "^3.0.3"
     }
 }

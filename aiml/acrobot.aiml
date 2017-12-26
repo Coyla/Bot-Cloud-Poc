@@ -1,0 +1,15 @@
+<?xml version="1.0" econding="ISO-8859-1"?>
+<aiml>
+    <category>
+        <pattern>ITG</pattern>
+        <template>IT Group</template>
+    </category>
+    <category>
+        <pattern>DW</pattern>
+        <template>Digital Working</template>
+    </category>
+    <category>
+        <pattern>BDDF</pattern>
+        <template>Banque de Détail de France</template>
+    </category>
+</aiml>
