@@ -39,17 +39,49 @@ const sendMessageWatson = (message) => new Promise((resolve, reject) => {
 });
 
 const fillTemplate = (template, data) => template.replace('[definition]', data);
+const isIntentsEmpty = (intents) => {
+    if(intents.length > 0){
+        return false;
+    }
+    return true;
+};
+const isEntitiesEmpty = (entities) => {
+    if(entities.length > 0 ){
+        return false;
+    }
+    return true;
+}
 const getBotResponse = (response) => {
+    debug(response);
     let botResponse = {
         message : ''
     };
-    if(isDialogCompleted(response) && isDefinitionTypeDialog(response.intents[0].intent)){
-        let entites = response.entities;
-        interpreter.findAnswer(entites[0].value, (answer) => {
-            botResponse.message = fillTemplate(response.output.text[0],answer);
-        });
-    }else{
-        botResponse.message = response.output.text[0];
+    let defaultResponse = response.output.text[0];
+    //not found message default
+    if(isIntentsEmpty(response.intents)){
+        if(isEntitiesEmpty(response.entities)){
+            botResponse.message = defaultResponse;
+        }
+        else{
+            if(isDefinitionTypeEntity(response.entities[0].entity)){
+                interpreter.findAnswer(response.entities[0].value, (answer) => {
+                    botResponse.message = fillTemplate(response.output.text[0],answer);
+                });
+            }
+            else{
+                botResponse.message = defaultResponse;
+            }
+        }
+    }
+    else{
+        if(isDefinitionTypeDialog(response.intents[0].intent) && isDialogCompleted(response)){
+            interpreter.findAnswer(response.entities[0].value, (answer) => {
+                botResponse.message = fillTemplate(response.output.text[0],answer);
+            });
+        }
+        else{
+            botResponse. message = defaultResponse;
+        }
     }
     return botResponse;
 };
@@ -58,8 +90,14 @@ const isDialogCompleted = (response) => {
 };
 
 const isDefinitionTypeDialog = (intent) => {
-    debug(intent);
+    debug("intent : " + intent);
     if(intent === 'definition'){
+        return true;
+    }
+    return false;
+};
+const isDefinitionTypeEntity = (entity) => {
+    if(entity === 'acronym'){
         return true;
     }
     return false;
