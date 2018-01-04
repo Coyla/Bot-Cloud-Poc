@@ -3,6 +3,7 @@ var watson = require('watson-developer-cloud');
 var aimlHigh = require('aiml-high');
 var config = require('./config.json');
 
+//setup aiml
 var interpreter = new aimlHigh({name : 'acrobot'}, 'goodbye');
 interpreter.loadFiles(['./aiml/acrobot.aiml']);
 
@@ -25,104 +26,118 @@ let conversation = watson.conversation({
 });
 
 const debug = (message) => console.log('[debug]', message);
-const sendMessageWatson = (message) => new Promise((resolve, reject) => {
-    conversation.message({
-        input : {"text" : message},
-        workspace_id : config.watson.workspace
-    }, (err, response) => {
-        if (err) {
-            reject(err);
-        } else {
-            resolve(response);
-        }
+
+const sendMessageWatson = (message) => {
+    return new Promise((resolve, reject) => {
+        conversation.message({
+            input: {"text": message},
+            workspace_id: config.watson.workspace
+        }, (err, response) => err ? reject(err) : resolve(response));
     });
-});
+};
 
 const fillTemplate = (template, data) => template.replace('[definition]', data);
+
 const isIntentsEmpty = (intents) => {
     if(intents.length > 0){
+        debug("isIntentsEmpty : false");
         return false;
     }
     return true;
 };
 const isEntitiesEmpty = (entities) => {
     if(entities.length > 0 ){
+        debug("isEntitiesEmpty : false");
         return false;
     }
     return true;
-}
-const getBotResponse = (response) => {
+};
+
+const isMessageFounded = message => {
+    if(isIntentsEmpty(message.intents) && isEntitiesEmpty(message.entities)){
+        debug("isMessageFounded : false");
+        return false;
+    }
+    return true;
+};
+
+const getBotResponse = response => {
     debug(response);
     let botResponse = {
         message : ''
     };
     let defaultResponse = response.output.text[0];
-    //not found message default
-    if(isIntentsEmpty(response.intents)){
-        if(isEntitiesEmpty(response.entities)){
-            botResponse.message = defaultResponse;
-        }
-        else{
-            if(isDefinitionTypeEntity(response.entities[0].entity)){
-                interpreter.findAnswer(response.entities[0].value, (answer) => {
-                    botResponse.message = fillTemplate(response.output.text[0],answer);
-                });
-            }
-            else{
-                botResponse.message = defaultResponse;
-            }
-        }
-    }
+    if(isDialogCompleted(response) && isDefinitionTypeDialog(response.intents,response.entities) && isMessageFounded(response)){
+        interpreter.findAnswer(response.entities[0].value, (answer) => {
+            botResponse.message = fillTemplate(response.output.text[0],answer);
+        });
+     }
     else{
-        if(isDefinitionTypeDialog(response.intents[0].intent) && isDialogCompleted(response)){
-            interpreter.findAnswer(response.entities[0].value, (answer) => {
-                botResponse.message = fillTemplate(response.output.text[0],answer);
-            });
-        }
-        else{
-            botResponse. message = defaultResponse;
-        }
+         botResponse.message = defaultResponse;
     }
     return botResponse;
 };
-const isDialogCompleted = (response) => {
+const isDialogCompleted = response => {
     return response.context.system.branch_exited_reason === "completed";
 };
 
-const isDefinitionTypeDialog = (intent) => {
-    debug("intent : " + intent);
-    if(intent === 'definition'){
-        return true;
-    }
-    return false;
-};
-const isDefinitionTypeEntity = (entity) => {
-    if(entity === 'acronym'){
-        return true;
-    }
-    return false;
+const isEntityEqualsTo = (entities,entityName) =>{
+    return entities.length > 0 && entities[0].entity === entityName;
+
 };
 
-const desplayError = (e) => console.error(e);
+const isIntentEqualsTo = (intents,intentName) => {
+    return intents.length > 0 && intents[0].intent === intentName;
+};
 
 
+const isDefinitionTypeDialog = (intents,entities) => {
+    debug("intent : " + intents);
+    return !!(isEntityEqualsTo(entities, 'acronym') ||
+        isIntentEqualsTo(intents, 'definition'));
+};
+
+const displayError = (e) => console.error(e);
+
+//handle routes
 server.post('/message',function(req,res,next){
     let clientMessage = req.body.message;
     sendMessageWatson(clientMessage)
-      .then((response) => {
+    .then(response => {
         let botResponse = getBotResponse(response);
         res.send(botResponse);
         return next();
       })
-      .catch((error) => desplayError(error));
+    .catch((error) => displayError(error));
 });
 
 server.get('/message',function(req,res,next){
   let response = {
     'name' : 'bot cloud',
     'response' : 'poc response'
-  }
+  };
   res.send(response);
   return next();
+});
 
+server.post('/training',function(req,res,next){
+    let trainingData = req.body;
+    debug(trainingData);
+    let params = {
+        workspace_id : config.watson.workspace,
+        entity: 'acronym',
+        value : ''
+    };
+    for(let i = 0; i < trainingData.length; i++){
+        params.value = trainingData[i].acronym;
+        conversation.createValue(params, (err,response) => {
+            if(err) {
+                displayError(err);
+            } else {
+                debug(JSON.stringify(response, null, 2))
+            }
+        });
+    }
+    res.send('ok');
+    return next();
 });
