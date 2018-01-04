@@ -4,7 +4,7 @@ var aimlHigh = require('aiml-high');
 var config = require('./config.json');
 
 //setup aiml
-var interpreter = new aimlHigh({name : 'acrobot'}, 'goodbye');
+let interpreter = new aimlHigh({name : 'acrobot'}, 'goodbye');
 interpreter.loadFiles(['./aiml/acrobot.aiml']);
 
 //setup server
@@ -67,7 +67,8 @@ const getBotResponse = response => {
         message : ''
     };
     let defaultResponse = response.output.text[0];
-    if(isDialogCompleted(response) && isDefinitionTypeDialog(response.intents,response.entities) && isMessageFounded(response)){
+    if(isDialogCompleted(response) && isDefinitionTypeDialog(response.intents,
+            response.entities) && isMessageFounded(response)){
         interpreter.findAnswer(response.entities[0].value, (answer) => {
             botResponse.message = fillTemplate(response.output.text[0],answer);
         });
