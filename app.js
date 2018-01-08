@@ -25,32 +25,6 @@ let conversation = watson.conversation({
     version_date : config.watson.version_date
 });
 
-//session
-let sessions = [
-    {
-        idSessionSkype : '123skype',
-        senderDisplayName : 'Juan',
-        idConversationWatson : '123watson'
-    },
-    {
-        idSessionSkype : '1234skype',
-        senderDisplayName : 'Coyla',
-        idConversationWatson : '1234watson'
-    }
-];
-
-const getSession = sessionId => {
-    let filteredSessions = sessions.filter(session => session.idSessionSkype ===  sessionId);
-    if(filteredSessions.length > 0){
-        return filteredSessions[0];
-    }
-    return undefined;
-};
-
-const isUserExist = sessionId => getSession(sessionId) !== undefined;
-
-
-
 const debug = (message) => console.log('[debug]', message);
 
 const sendMessageWatson = (message) => {
@@ -149,7 +123,6 @@ server.post('/message',function(req,res,next){
     sendMessageWatson(clientMessage)
     .then(response => {
         let botResponse = getBotResponse(response);
-        handleWatsionConversation(botResponse);
         //send message avec id
         res.send(botResponse);
         return next();
@@ -186,21 +159,4 @@ server.post('/training',function(req,res,next){
     }
     res.send('ok');
     return next();
-});
-
-server.post('/aiml', (req,res,next) => {
-    let trainingData = req.body;
-    for(let i = 0; i < trainingData.length; i++){
-        params.value = trainingData[i].acronym;
-        conversation.createValue(params, (err,response) => {
-            if(err) {
-                displayError(err);
-            } else {
-                debug(JSON.stringify(response, null, 2))
-            }
-        });
-    }
-    res.send('ok');
-    return next();
-
 });
