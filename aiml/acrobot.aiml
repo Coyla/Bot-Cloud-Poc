@@ -1,15 +1,3443 @@
 <?xml version="1.0" econding="ISO-8859-1"?>
-<aiml>
-    <category>
-        <pattern>ITG</pattern>
-        <template>IT Group</template>
-    </category>
-    <category>
-        <pattern>DW</pattern>
-        <template>Digital Working</template>
-    </category>
-    <category>
-        <pattern>BDDF</pattern>
-        <template>Banque de Détail de France</template>
-    </category>
-</aiml>
+	<aiml>
+	  <category>
+	    <pattern>ITG</pattern>
+	    <template>IT Groupe</template>
+	  </category>
+	  <category>
+	    <pattern>ITG_ITRMG</pattern>
+	    <template>IT Risk Management Group</template>
+	  </category>
+	  <category>
+	    <pattern>ITRMG</pattern>
+	    <template>IT Risk Management Group</template>
+	  </category>
+	  <category>
+	    <pattern>ITG_IPS</pattern>
+	    <template>Infrastructure &amp; Production Services</template>
+	  </category>
+	  <category>
+	    <pattern>IPS</pattern>
+	    <template>Infrastructure &amp; Production Services</template>
+	  </category>
+	  <category>
+	    <pattern>RT</pattern>
+	    <template>Retail Banking Transverses</template>
+	  </category>
+	  <category>
+	    <pattern>ITG_SIT</pattern>
+	    <template>Systèmes d'Information Transverses</template>
+	  </category>
+	  <category>
+	    <pattern>SIT</pattern>
+	    <template>Systèmes d'Information Transverses</template>
+	  </category>
+	  <category>
+	    <pattern>BP²I</pattern>
+	    <template>BNP Paribas Partners for Innovation</template>
+	  </category>
+	  <category>
+	    <pattern>BP2I</pattern>
+	    <template>BNP Paribas Partners for Innovation</template>
+	  </category>
+	  <category>
+	    <pattern>ITG_GIPP</pattern>
+	    <template>Gouvernance Informatique, Processus et Projets</template>
+	  </category>
+	  <category>
+	    <pattern>GIPP</pattern>
+	    <template>Gouvernance Informatique, Processus et Projets</template>
+	  </category>
+	  <category>
+	    <pattern>ITG_RH</pattern>
+	    <template>Ressources Humaines</template>
+	  </category>
+	  <category>
+	    <pattern>RH</pattern>
+	    <template>Ressources Humaines</template>
+	  </category>
+	  <category>
+	    <pattern>ITG_Finance</pattern>
+	    <template>Finances</template>
+	  </category>
+	  <category>
+	    <pattern>ASF</pattern>
+	    <template>ALM Trésorerie Sécurité Financière et Flux</template>
+	  </category>
+	  <category>
+	    <pattern>FIN</pattern>
+	    <template>Finances</template>
+	  </category>
+	  <category>
+	    <pattern>GAO</pattern>
+	    <template>GED Archivage et Outils</template>
+	  </category>
+	  <category>
+	    <pattern>RHCR</pattern>
+	    <template>RH Communication et Référentiels</template>
+	  </category>
+	  <category>
+	    <pattern>RI</pattern>
+	    <template>Risques</template>
+	  </category>
+	  <category>
+	    <pattern>MAP</pattern>
+	    <template>Méthodes, Amélioration continue et Pilotage</template>
+	  </category>
+	  <category>
+	    <pattern>ARC</pattern>
+	    <template>Architectures</template>
+	  </category>
+	  <category>
+	    <pattern>UPM</pattern>
+	    <template>Unité de Production Métier</template>
+	  </category>
+	  <category>
+	    <pattern>DW</pattern>
+	    <template>Digital Working</template>
+	  </category>
+	  <category>
+	    <pattern>GAP</pattern>
+	    <template>Gouvernance, Accompagnement et Pilotage</template>
+	  </category>
+	  <category>
+	    <pattern>IDT</pattern>
+	    <template>Infrastructure &amp; Delivery Transverse</template>
+	  </category>
+	  <category>
+	    <pattern>SAS</pattern>
+	    <template>1) Services, Architectes &amp; Standards, 2) Société par Actions Simplifiée</template>
+	  </category>
+	  <category>
+	    <pattern>DIVTG</pattern>
+	    <template>Division Telecoms Groupe</template>
+	  </category>
+	  <category>
+	    <pattern>MTS</pattern>
+	    <template>Mutualized Technical Services</template>
+	  </category>
+	  <category>
+	    <pattern>PS</pattern>
+	    <template>Programs &amp; Strategy</template>
+	  </category>
+	  <category>
+	    <pattern>CR</pattern>
+	    <template>Customer Relationship</template>
+	  </category>
+	  <category>
+	    <pattern>SR</pattern>
+	    <template>Security &amp; Risk Management</template>
+	  </category>
+	  <category>
+	    <pattern>SP</pattern>
+	    <template>Server Platform</template>
+	  </category>
+	  <category>
+	    <pattern>TP</pattern>
+	    <template>Technical Platform</template>
+	  </category>
+	  <category>
+	    <pattern>IP</pattern>
+	    <template>IT Services Management &amp; Project</template>
+	  </category>
+	  <category>
+	    <pattern>FO</pattern>
+	    <template>Finance &amp; Operations</template>
+	  </category>
+	  <category>
+	    <pattern>ITM</pattern>
+	    <template>IT Méthodes</template>
+	  </category>
+	  <category>
+	    <pattern>ITA</pattern>
+	    <template>IT Architecture</template>
+	  </category>
+	  <category>
+	    <pattern>GPMO</pattern>
+	    <template>Global Project Management Office</template>
+	  </category>
+	  <category>
+	    <pattern>ADM</pattern>
+	    <template>Application Developpement Maintenance</template>
+	  </category>
+	  <category>
+	    <pattern>FU</pattern>
+	    <template>Filière Unique</template>
+	  </category>
+	  <category>
+	    <pattern>IAM</pattern>
+	    <template> Identity Access Management</template>
+	  </category>
+	  <category>
+	    <pattern>CIB</pattern>
+	    <template>Corporate &amp; Institutional Banking</template>
+	  </category>
+	  <category>
+	    <pattern>RB</pattern>
+	    <template>Retail Banking</template>
+	  </category>
+	  <category>
+	    <pattern>IFS</pattern>
+	    <template>International Financial Services</template>
+	  </category>
+	  <category>
+	    <pattern>DM</pattern>
+	    <template>Domestic Markets</template>
+	  </category>
+	  <category>
+	    <pattern>BPSS</pattern>
+	    <template> BNP Paribas Securities Services</template>
+	  </category>
+	  <category>
+	    <pattern>BP2S</pattern>
+	    <template> BNP Paribas Securities Services</template>
+	  </category>
+	  <category>
+	    <pattern>SCBP</pattern>
+	    <template>Social &amp; Collaborative Business Place</template>
+	  </category>
+	  <category>
+	    <pattern>BP</pattern>
+	    <template>Business Place</template>
+	  </category>
+	  <category>
+	    <pattern>BDDF</pattern>
+	    <template>Banque de Détail en France </template>
+	  </category>
+	  <category>
+	    <pattern>FRB</pattern>
+	    <template>French Retail Banking </template>
+	  </category>
+	  <category>
+	    <pattern>CAP</pattern>
+	    <template>Chargé d'Affaires Professionnel </template>
+	  </category>
+	  <category>
+	    <pattern>RDAC</pattern>
+	    <template>Responsable du Développement et de l'Animation Commerciale </template>
+	  </category>
+	  <category>
+	    <pattern>APAC</pattern>
+	    <template>Agence de Production et d'Appui Commercial </template>
+	  </category>
+	  <category>
+	    <pattern>RGR</pattern>
+	    <template>Responsable Grandes Relations </template>
+	  </category>
+	  <category>
+	    <pattern>CAE</pattern>
+	    <template>Chargé d'Affaires Entreprise </template>
+	  </category>
+	  <category>
+	    <pattern>CAECI</pattern>
+	    <template>Chargé d'Affaires Entreprise Commerce International </template>
+	  </category>
+	  <category>
+	    <pattern>CAIA</pattern>
+	    <template>Chargé d'Affaires Institutions &amp; Associations </template>
+	  </category>
+	  <category>
+	    <pattern>CAPA</pattern>
+	    <template>Chargé d'Affaires Professionnels Agriculture </template>
+	  </category>
+	  <category>
+	    <pattern>CAC</pattern>
+	    <template>Chargé d'Appui Commercial </template>
+	  </category>
+	  <category>
+	    <pattern>DIA</pattern>
+	    <template>Directeur d'Agence </template>
+	  </category>
+	  <category>
+	    <pattern>DIE</pattern>
+	    <template>Directeur d'Entité </template>
+	  </category>
+	  <category>
+	    <pattern>CFMP</pattern>
+	    <template>Chargé des Flux et Moyens de Paiement </template>
+	  </category>
+	  <category>
+	    <pattern>CMJ</pattern>
+	    <template>Chargé du Marché des Jeunes </template>
+	  </category>
+	  <category>
+	    <pattern>CPI</pattern>
+	    <template>Chargé de la Prescription Immobilière </template>
+	  </category>
+	  <category>
+	    <pattern>CSC</pattern>
+	    <template>Chargé de Service Client </template>
+	  </category>
+	  <category>
+	    <pattern>CSR</pattern>
+	    <template>Chargé de la Surveillance des Risques </template>
+	  </category>
+	  <category>
+	    <pattern>CBPAD</pattern>
+	    <template>Conseil Banque Privée Actionnaires &amp; Dirigeants </template>
+	  </category>
+	  <category>
+	    <pattern>CBPE</pattern>
+	    <template>Conseil Banque Privée Entrepreneurs </template>
+	  </category>
+	  <category>
+	    <pattern>CBPP</pattern>
+	    <template>Conseil Banque Privée Particuliers </template>
+	  </category>
+	  <category>
+	    <pattern>CSI</pattern>
+	    <template>Conseiller Spécialisé Immobilier </template>
+	  </category>
+	  <category>
+	    <pattern>CSEP</pattern>
+	    <template>Conseiller Spécialisé Epargne &amp; Prévoyance </template>
+	  </category>
+	  <category>
+	    <pattern>CSSB</pattern>
+	    <template>Centre Spécialisé en Solutions Budgétaires </template>
+	  </category>
+	  <category>
+	    <pattern>GPAC</pattern>
+	    <template>Groupe de Production et d'Appui Commercial </template>
+	  </category>
+	  <category>
+	    <pattern>GI</pattern>
+	    <template>Gestionnaire Individuel </template>
+	  </category>
+	  <category>
+	    <pattern>RBPR</pattern>
+	    <template>Responsable Banque Privée Régionale </template>
+	  </category>
+	  <category>
+	    <pattern>RCBP</pattern>
+	    <template>Responsable Centre Banque Privée </template>
+	  </category>
+	  <category>
+	    <pattern>RCEI</pattern>
+	    <template>Responsable Commercial Entreprises &amp; Institutions </template>
+	  </category>
+	  <category>
+	    <pattern>RCR</pattern>
+	    <template>Responsable Communication en Région </template>
+	  </category>
+	  <category>
+	    <pattern>MOA</pattern>
+	    <template>Maîtrise d'Ouvrage </template>
+	  </category>
+	  <category>
+	    <pattern>MOE</pattern>
+	    <template>Maîtrise d'Oeuvre </template>
+	  </category>
+	  <category>
+	    <pattern>TDC</pattern>
+	    <template>Transformation &amp; Développement des Compétences </template>
+	  </category>
+	  <category>
+	    <pattern>REBP</pattern>
+	    <template>Responsable d'Equipe Banque Privée </template>
+	  </category>
+	  <category>
+	    <pattern>RGRH</pattern>
+	    <template>Responsable Gestion et Ressources Humaines </template>
+	  </category>
+	  <category>
+	    <pattern>RRS</pattern>
+	    <template>Responsable des Relations Sociales </template>
+	  </category>
+	  <category>
+	    <pattern>RCSR</pattern>
+	    <template>Responsable du Contrôle et de la Surveillance des Risques </template>
+	  </category>
+	  <category>
+	    <pattern>RPASC</pattern>
+	    <template>Responsable du Pôle d'Appui et de Soutien au Commerce </template>
+	  </category>
+	  <category>
+	    <pattern>RRDC</pattern>
+	    <template>Responsable Régional du Développement des Compétences </template>
+	  </category>
+	  <category>
+	    <pattern>2RAV</pattern>
+	    <template>Responsable Relations Après-Vente avec le Réseau </template>
+	  </category>
+	  <category>
+	    <pattern>RRH</pattern>
+	    <template>Responsable Ressources Humaines </template>
+	  </category>
+	  <category>
+	    <pattern>RSC</pattern>
+	    <template>Responsable Soutien au Commerce </template>
+	  </category>
+	  <category>
+	    <pattern>PPC</pattern>
+	    <template>Projet Préférence Client </template>
+	  </category>
+	  <category>
+	    <pattern>SMP</pattern>
+	    <template>Senior Management Position </template>
+	  </category>
+	  <category>
+	    <pattern>DSI</pattern>
+	    <template>Direction des Systèmes d'Information </template>
+	  </category>
+	  <category>
+	    <pattern>RHOET</pattern>
+	    <template>Ressources Humaines Organisation &amp; Environnements de Travail </template>
+	  </category>
+	  <category>
+	    <pattern>BPF</pattern>
+	    <template>Banque Privée France</template>
+	  </category>
+	  <category>
+	    <pattern>CAF</pattern>
+	    <template>Comité d'Architecture Fonction </template>
+	  </category>
+	  <category>
+	    <pattern>PAA</pattern>
+	    <template>Procédure Allégée d'Architecture </template>
+	  </category>
+	  <category>
+	    <pattern>LOL</pattern>
+	    <template>Laughing Out Loud</template>
+	  </category>
+	  <category>
+	    <pattern>IRB</pattern>
+	    <template>International Retail Banking</template>
+	  </category>
+	  <category>
+	    <pattern>ITP</pattern>
+	    <template>Information Technology &amp; Processes</template>
+	  </category>
+	  <category>
+	    <pattern>PF</pattern>
+	    <template>1) Personal Finance, 2) Principal de Fusion</template>
+	  </category>
+	  <category>
+	    <pattern>BNPP</pattern>
+	    <template>Banque Nationale de Paris Paribas</template>
+	  </category>
+	  <category>
+	    <pattern>BNP</pattern>
+	    <template>Banque Nationale de Paris</template>
+	  </category>
+	  <category>
+	    <pattern>DE</pattern>
+	    <template>Dossier d’exploitation</template>
+	  </category>
+	  <category>
+	    <pattern>AEL</pattern>
+	    <template>Aide En Ligne</template>
+	  </category>
+	  <category>
+	    <pattern>ATR</pattern>
+	    <template>Architecture Technique de Référence</template>
+	  </category>
+	  <category>
+	    <pattern>STG</pattern>
+	    <template>Service Telecoms Groupe</template>
+	  </category>
+	  <category>
+	    <pattern>CMCC</pattern>
+	    <template>Cash Management Competence Center</template>
+	  </category>
+	  <category>
+	    <pattern>DR</pattern>
+	    <template>Direction de Réseau</template>
+	  </category>
+	  <category>
+	    <pattern>PARC</pattern>
+	    <template>Pôle d’Analyse Risque Crédit</template>
+	  </category>
+	  <category>
+	    <pattern>PASC</pattern>
+	    <template>Pôle d’Assistance et de Soutien au Commerce</template>
+	  </category>
+	  <category>
+	    <pattern>P2R</pattern>
+	    <template>Pôle Risque Régional</template>
+	  </category>
+	  <category>
+	    <pattern>ARE</pattern>
+	    <template>Analyste Risque Engagement</template>
+	  </category>
+	  <category>
+	    <pattern>CA</pattern>
+	    <template>Chargés d’Affaires Professionnelles</template>
+	  </category>
+	  <category>
+	    <pattern>CAER</pattern>
+	    <template>Chargé d’Affaires Entrepreneur</template>
+	  </category>
+	  <category>
+	    <pattern>CDC</pattern>
+	    <template>Chargé de Développement Commercial</template>
+	  </category>
+	  <category>
+	    <pattern>CC</pattern>
+	    <template>Conseiller Client</template>
+	  </category>
+	  <category>
+	    <pattern>CP</pattern>
+	    <template>Conseiller Patrimonial</template>
+	  </category>
+	  <category>
+	    <pattern>AC</pattern>
+	    <template>Assistant Commercial</template>
+	  </category>
+	  <category>
+	    <pattern>AT</pattern>
+	    <template>Assistant Technique</template>
+	  </category>
+	  <category>
+	    <pattern>DIG</pattern>
+	    <template>Directeur de Groupe</template>
+	  </category>
+	  <category>
+	    <pattern>RRC</pattern>
+	    <template>Responsable Relations Consommateurs</template>
+	  </category>
+	  <category>
+	    <pattern>RPDC</pattern>
+	    <template>Responsable Pôle Développement Commercial</template>
+	  </category>
+	  <category>
+	    <pattern>RPR</pattern>
+	    <template>Responsable Pôle Risques</template>
+	  </category>
+	  <category>
+	    <pattern>RGC</pattern>
+	    <template>Responsable Gestion et Conformité</template>
+	  </category>
+	  <category>
+	    <pattern>FATCA</pattern>
+	    <template>Foreign Account Tax Compliance Act</template>
+	  </category>
+	  <category>
+	    <pattern>AEOI</pattern>
+	    <template>Automatic Exchange of Information</template>
+	  </category>
+	  <category>
+	    <pattern>IGA</pattern>
+	    <template>Intergovernemental Agreement</template>
+	  </category>
+	  <category>
+	    <pattern>HMRC</pattern>
+	    <template>HM Revenue &amp; Customs</template>
+	  </category>
+	  <category>
+	    <pattern>CR3</pattern>
+	    <template>Common Reporting Standard</template>
+	  </category>
+	  <category>
+	    <pattern>AML</pattern>
+	    <template>Anti-Money Laundering (anti-blanchiment d’argent)</template>
+	  </category>
+	  <category>
+	    <pattern>KYC</pattern>
+	    <template>Know Your Customer</template>
+	  </category>
+	  <category>
+	    <pattern>IRS</pattern>
+	    <template>Internal Revenue Service</template>
+	  </category>
+	  <category>
+	    <pattern>1CNUM</pattern>
+	    <template>1 caractère numérique</template>
+	  </category>
+	  <category>
+	    <pattern>5CNUM</pattern>
+	    <template>5 caractères numériques</template>
+	  </category>
+	  <category>
+	    <pattern>AED</pattern>
+	    <template>Avance en Devises</template>
+	  </category>
+	  <category>
+	    <pattern>ACCE</pattern>
+	    <template>Arrêtés de comptes courants Entreprise</template>
+	  </category>
+	  <category>
+	    <pattern>ASFI</pattern>
+	    <template>Avance sur Facture à l’International</template>
+	  </category>
+	  <category>
+	    <pattern>ASP</pattern>
+	    <template>Application Service Provider</template>
+	  </category>
+	  <category>
+	    <pattern>BAC</pattern>
+	    <template>Base Comptable</template>
+	  </category>
+	  <category>
+	    <pattern>BAC SAR</pattern>
+	    <template>Environnement comptable du groupe BNP Paribas</template>
+	  </category>
+	  <category>
+	    <pattern>BAF</pattern>
+	    <template>Base des Accords de Fonctionnement</template>
+	  </category>
+	  <category>
+	    <pattern>BAP</pattern>
+	    <template>Bon à payer</template>
+	  </category>
+	  <category>
+	    <pattern>B/C</pattern>
+	    <template>Banque vers client (Reportings)</template>
+	  </category>
+	  <category>
+	    <pattern>BCN</pattern>
+	    <template>Base des Conditions Négociées</template>
+	  </category>
+	  <category>
+	    <pattern>BDF</pattern>
+	    <template>Banque de France</template>
+	  </category>
+	  <category>
+	    <pattern>BDI</pattern>
+	    <template>Base des données Interne</template>
+	  </category>
+	  <category>
+	    <pattern>BFR</pattern>
+	    <template>Besoin en Fonds de Roulement</template>
+	  </category>
+	  <category>
+	    <pattern>BLO</pattern>
+	    <template>Bloqué (utilisé pour les comptes courants lorsque la société est en cours de constitution)</template>
+	  </category>
+	  <category>
+	    <pattern>BNE</pattern>
+	    <template>Bnp Net</template>
+	  </category>
+	  <category>
+	    <pattern>BNP Dev</pattern>
+	    <template>BNP Développement (Cette entité travaille sur les sociétés en Développement)</template>
+	  </category>
+	  <category>
+	    <pattern>CAA</pattern>
+	    <template>Centralisation Automatique Administrative.</template>
+	  </category>
+	  <category>
+	    <pattern>CACE</pattern>
+	    <template>Centre d'Affaires et de Conseil Entrepreneurs</template>
+	  </category>
+	  <category>
+	    <pattern>CACM</pattern>
+	    <template>Chargé d’affaires Cash Management</template>
+	  </category>
+	  <category>
+	    <pattern>CAFS</pattern>
+	    <template>Chargé d’affaires Financements Structurés </template>
+	  </category>
+	  <category>
+	    <pattern>CAT</pattern>
+	    <template>Centralisation Automatique de Trésorerie (CashPool)</template>
+	  </category>
+	  <category>
+	    <pattern>C/B</pattern>
+	    <template>Client vers Banque (Remises)</template>
+	  </category>
+	  <category>
+	    <pattern>CB</pattern>
+	    <template>Carte bancaire</template>
+	  </category>
+	  <category>
+	    <pattern>CEN</pattern>
+	    <template>Compte centralisateur.</template>
+	  </category>
+	  <category>
+	    <pattern>CENTREC</pattern>
+	    <template>Centralisation de recettes</template>
+	  </category>
+	  <category>
+	    <pattern>CGV</pattern>
+	    <template>Chargé(e) de Gestion des Ventes</template>
+	  </category>
+	  <category>
+	    <pattern>CIF</pattern>
+	    <template>Compte d’instruments financiers</template>
+	  </category>
+	  <category>
+	    <pattern>CIR</pattern>
+	    <template>Commission Interbancaire de Retrait</template>
+	  </category>
+	  <category>
+	    <pattern>CIP</pattern>
+	    <template>Commission interbancaire de Paiement = Commission d’interchange</template>
+	  </category>
+	  <category>
+	    <pattern>CLS</pattern>
+	    <template>Carte de liaison sécurisée</template>
+	  </category>
+	  <category>
+	    <pattern>MT</pattern>
+	    <template>Crédit moyen terme</template>
+	  </category>
+	  <category>
+	    <pattern>CORE</pattern>
+	    <template>B to C (Banque vers le Client)</template>
+	  </category>
+	  <category>
+	    <pattern>CPR</pattern>
+	    <template>Carte Premier</template>
+	  </category>
+	  <category>
+	    <pattern>CRE</pattern>
+	    <template>Compte rendu Evénement</template>
+	  </category>
+	  <category>
+	    <pattern>CREDOC</pattern>
+	    <template>Crédit Documentaire</template>
+	  </category>
+	  <category>
+	    <pattern>CTS</pattern>
+	    <template>Carte Transfert Sécurisé</template>
+	  </category>
+	  <category>
+	    <pattern>DAF</pattern>
+	    <template>Directeur Administratif et Financier</template>
+	  </category>
+	  <category>
+	    <pattern>DAT</pattern>
+	    <template>Dépôt à terme</template>
+	  </category>
+	  <category>
+	    <pattern>DC</pattern>
+	    <template>Date de comptabilisation</template>
+	  </category>
+	  <category>
+	    <pattern>DFSE</pattern>
+	    <template>Dénombrement pour la Facturation Spécifique des Entreprises</template>
+	  </category>
+	  <category>
+	    <pattern>DIR</pattern>
+	    <template>Compte secondaire en mode direct. Compte tête de fusion</template>
+	  </category>
+	  <category>
+	    <pattern>DPO</pattern>
+	    <template>Direction de la prévision et de l’organisation</template>
+	  </category>
+	  <category>
+	    <pattern>DSP</pattern>
+	    <template>Directive sur les Services/ Saisies des Paiements</template>
+	  </category>
+	  <category>
+	    <pattern>EAR</pattern>
+	    <template>Ecriture à régulariser</template>
+	  </category>
+	  <category>
+	    <pattern>EBALD</pattern>
+	    <template>ELECTRONIC BANKING AND LIQUIDITY DEPARTMENT</template>
+	  </category>
+	  <category>
+	    <pattern>EBE</pattern>
+	    <template>Excédent brut d’exploitation</template>
+	  </category>
+	  <category>
+	    <pattern>ECM</pattern>
+	    <template>Ecriture manuelle</template>
+	  </category>
+	  <category>
+	    <pattern>EDF</pattern>
+	    <template>Echange de fichiers</template>
+	  </category>
+	  <category>
+	    <pattern>EER</pattern>
+	    <template>Entrée en Relation</template>
+	  </category>
+	  <category>
+	    <pattern>EFC</pattern>
+	    <template>Entreprise en forte croissance</template>
+	  </category>
+	  <category>
+	    <pattern>EJ</pattern>
+	    <template>Entité Juridique</template>
+	  </category>
+	  <category>
+	    <pattern>EM</pattern>
+	    <template>Etat Major</template>
+	  </category>
+	  <category>
+	    <pattern>FBE</pattern>
+	    <template>Frais banque étrangère.</template>
+	  </category>
+	  <category>
+	    <pattern>FBF</pattern>
+	    <template>Fédération des Banques françaises</template>
+	  </category>
+	  <category>
+	    <pattern>FDC</pattern>
+	    <template>Fonds de Commerce</template>
+	  </category>
+	  <category>
+	    <pattern>FEF</pattern>
+	    <template>Forfait essentiel Flux</template>
+	  </category>
+	  <category>
+	    <pattern>FF</pattern>
+	    <template>Forfait fixe</template>
+	  </category>
+	  <category>
+	    <pattern>FICP</pattern>
+	    <template>Fichier national des Incidents de remboursement des Crédits aux Particuliers (clt surendetté, ne paie pas son crédit, …)</template>
+	  </category>
+	  <category>
+	    <pattern>FR</pattern>
+	    <template>Fonds de Roulement</template>
+	  </category>
+	  <category>
+	    <pattern>FRST</pattern>
+	    <template>First</template>
+	  </category>
+	  <category>
+	    <pattern>GA</pattern>
+	    <template>Groupe d’affaires</template>
+	  </category>
+	  <category>
+	    <pattern>GE</pattern>
+	    <template>Grande Entreprise</template>
+	  </category>
+	  <category>
+	    <pattern>GEODE</pattern>
+	    <template>Gestion des opportunités dans le Dossier Entreprises</template>
+	  </category>
+	  <category>
+	    <pattern>GICS</pattern>
+	    <template>Gestion des Informations Clients Spécifiques</template>
+	  </category>
+	  <category>
+	    <pattern>GOODIE</pattern>
+	    <template>Gestion Outil Orientation et Décision Interactif et Evolutif</template>
+	  </category>
+	  <category>
+	    <pattern>GR</pattern>
+	    <template>Grande Relation</template>
+	  </category>
+	  <category>
+	    <pattern>GRM</pattern>
+	    <template>Global Relationship Manager</template>
+	  </category>
+	  <category>
+	    <pattern>GRN</pattern>
+	    <template>Gestion des risques normale</template>
+	  </category>
+	  <category>
+	    <pattern>GRP</pattern>
+	    <template>Gestion des risques préoccupant</template>
+	  </category>
+	  <category>
+	    <pattern>GRS</pattern>
+	    <template>Gestion des risques sensible</template>
+	  </category>
+	  <category>
+	    <pattern>ID</pattern>
+	    <template>Intérêts débiteurs</template>
+	  </category>
+	  <category>
+	    <pattern>IFF</pattern>
+	    <template>Incidence Financière de Fraude. On peut facturer au réel ou un pourcentage.</template>
+	  </category>
+	  <category>
+	    <pattern>INB</pattern>
+	    <template>Interdit Bancaire</template>
+	  </category>
+	  <category>
+	    <pattern>ING</pattern>
+	    <template>Interdit bancaire Général</template>
+	  </category>
+	  <category>
+	    <pattern>IPC</pattern>
+	    <template>Indice de Posture Commerciale</template>
+	  </category>
+	  <category>
+	    <pattern>IPSF</pattern>
+	    <template>Indice Points Sensibles Fondamentaux</template>
+	  </category>
+	  <category>
+	    <pattern>JRB</pattern>
+	    <template>Journal de Rapprochement Bancaire</template>
+	  </category>
+	  <category>
+	    <pattern>LCR</pattern>
+	    <template>Lettre de change relevée (= effet de commerce = effet)</template>
+	  </category>
+	  <category>
+	    <pattern>LLD</pattern>
+	    <template>Location Longue Durée</template>
+	  </category>
+	  <category>
+	    <pattern>MAF</pattern>
+	    <template>Mécanisme d’Archivage des Factures</template>
+	  </category>
+	  <category>
+	    <pattern>MCF</pattern>
+	    <template>Mouvements Comptes Financiers.</template>
+	  </category>
+	  <category>
+	    <pattern>MDE</pattern>
+	    <template>Maison des Entrepreneurs</template>
+	  </category>
+	  <category>
+	    <pattern>ME</pattern>
+	    <template>Moyenne Entreprise</template>
+	  </category>
+	  <category>
+	    <pattern>MGF</pattern>
+	    <template>Mécanisme Général de Facturation</template>
+	  </category>
+	  <category>
+	    <pattern>MO</pattern>
+	    <template>Middle Office</template>
+	  </category>
+	  <category>
+	    <pattern>MSCC</pattern>
+	    <template>Mouvement soumis à commission de compte</template>
+	  </category>
+	  <category>
+	    <pattern>NAE</pattern>
+	    <template>Nouvelle architecture entreprise</template>
+	  </category>
+	  <category>
+	    <pattern>NF</pattern>
+	    <template>Nécessaire Fait</template>
+	  </category>
+	  <category>
+	    <pattern>OP</pattern>
+	    <template>Opération remarquable</template>
+	  </category>
+	  <category>
+	    <pattern>OR</pattern>
+	    <template>Opposition (sur une carte)</template>
+	  </category>
+	  <category>
+	    <pattern>PAGA</pattern>
+	    <template>(Agence de) Paris Grande Armée</template>
+	  </category>
+	  <category>
+	    <pattern>PCE</pattern>
+	    <template>Produits et charges d’Exploitation</template>
+	  </category>
+	  <category>
+	    <pattern>PDF</pattern>
+	    <template>Portable Document Format</template>
+	  </category>
+	  <category>
+	    <pattern>PME</pattern>
+	    <template>Petites et Moyennes Entreprises</template>
+	  </category>
+	  <category>
+	    <pattern>PSD</pattern>
+	    <template>Paiement Sauf Désaccord (le client paie tous les frais liés aux effets sauf s’il exprime son désaccord)</template>
+	  </category>
+	  <category>
+	    <pattern>PSE</pattern>
+	    <template>Plateforme Sécurisée Entreprises</template>
+	  </category>
+	  <category>
+	    <pattern>PSF</pattern>
+	    <template>Point de Surveillance Fondamental</template>
+	  </category>
+	  <category>
+	    <pattern>PFN</pattern>
+	    <template>Plateforme de numérisation</template>
+	  </category>
+	  <category>
+	    <pattern>PTF</pattern>
+	    <template>Plateforme</template>
+	  </category>
+	  <category>
+	    <pattern>RA</pattern>
+	    <template>Revue annuelle</template>
+	  </category>
+	  <category>
+	    <pattern>RAC</pattern>
+	    <template>Renouvellement automatique de chèquier</template>
+	  </category>
+	  <category>
+	    <pattern>RAZ</pattern>
+	    <template>Remise à zéro</template>
+	  </category>
+	  <category>
+	    <pattern>RCUR</pattern>
+	    <template>Récurrent</template>
+	  </category>
+	  <category>
+	    <pattern>RD</pattern>
+	    <template>Répertoire des données</template>
+	  </category>
+	  <category>
+	    <pattern>REF</pattern>
+	    <template>compte reflet</template>
+	  </category>
+	  <category>
+	    <pattern>RIB</pattern>
+	    <template>Relevé d’Identité Bancaire. Code banque (30004 = BNP) + code agence (00813 = Agence Paris Etoile) + 000 + n° de compte en 8 chiffres  (si débute par 433 compte fruits et prod., si 181 compte titres, … ) + clé RIB en 2 chiffres</template>
+	  </category>
+	  <category>
+	    <pattern>RMPM</pattern>
+	    <template>Référentiel Mondial des personnes morales</template>
+	  </category>
+	  <category>
+	    <pattern>RN</pattern>
+	    <template>Résultat Net</template>
+	  </category>
+	  <category>
+	    <pattern>RUM</pattern>
+	    <template>Référence Unique du Mandat</template>
+	  </category>
+	  <category>
+	    <pattern>RVB</pattern>
+	    <template>Rouge Vert Bleu​</template>
+	  </category>
+	  <category>
+	    <pattern>SAE</pattern>
+	    <template>Service d’Assistance aux Entreprise</template>
+	  </category>
+	  <category>
+	    <pattern>SAR</pattern>
+	    <template>Saisie arrêt</template>
+	  </category>
+	  <category>
+	    <pattern>SBLC</pattern>
+	    <template>Stand By Letter Credit</template>
+	  </category>
+	  <category>
+	    <pattern>SCT</pattern>
+	    <template>Virements SEPA</template>
+	  </category>
+	  <category>
+	    <pattern>SDD</pattern>
+	    <template>Prélèvements SEPA</template>
+	  </category>
+	  <category>
+	    <pattern>SDO</pattern>
+	    <template>Saisie Direction d’Opérations</template>
+	  </category>
+	  <category>
+	    <pattern>SF</pattern>
+	    <template>Secondaire de Fusion</template>
+	  </category>
+	  <category>
+	    <pattern>SGI</pattern>
+	    <template>Système Général d’information (BNP Paribas)</template>
+	  </category>
+	  <category>
+	    <pattern>TBTB</pattern>
+	    <template>Taux Bilatéral de Transactions Bloquées</template>
+	  </category>
+	  <category>
+	    <pattern>TCN</pattern>
+	    <template>Titre de Créance Négociable</template>
+	  </category>
+	  <category>
+	    <pattern>TDF</pattern>
+	    <template>Transporteur de fonds.</template>
+	  </category>
+	  <category>
+	    <pattern>TIP</pattern>
+	    <template>Titre Interbancaire de Paiement</template>
+	  </category>
+	  <category>
+	    <pattern>TLMC</pattern>
+	    <template>Chèques télétransmis, c’est-à-dire mis dans une machine qui les lit</template>
+	  </category>
+	  <category>
+	    <pattern>TPE</pattern>
+	    <template>Terminal de Paiement Electronique</template>
+	  </category>
+	  <category>
+	    <pattern>TS</pattern>
+	    <template>Transport Sécurisé</template>
+	  </category>
+	  <category>
+	    <pattern>TUP</pattern>
+	    <template>Transmission Universelle de Patrimoine</template>
+	  </category>
+	  <category>
+	    <pattern>VA</pattern>
+	    <template>Valeur Ajoutée</template>
+	  </category>
+	  <category>
+	    <pattern>VCOM</pattern>
+	    <template>Virement Commercial</template>
+	  </category>
+	  <category>
+	    <pattern>VI</pattern>
+	    <template>Virements Internationaux</template>
+	  </category>
+	  <category>
+	    <pattern>AFS</pattern>
+	    <template>Automotive Financial Services</template>
+	  </category>
+	  <category>
+	    <pattern>ALM</pattern>
+	    <template>Asset Liability Management</template>
+	  </category>
+	  <category>
+	    <pattern>ALMT</pattern>
+	    <template>Asset Liability Management Treasury</template>
+	  </category>
+	  <category>
+	    <pattern>BAU</pattern>
+	    <template>Business As Usual</template>
+	  </category>
+	  <category>
+	    <pattern>BCP</pattern>
+	    <template>Business Continuity Plan</template>
+	  </category>
+	  <category>
+	    <pattern>BISO</pattern>
+	    <template>Business Information Security Officer</template>
+	  </category>
+	  <category>
+	    <pattern>CID</pattern>
+	    <template>Canal d'Injection Directe</template>
+	  </category>
+	  <category>
+	    <pattern>CRA</pattern>
+	    <template>Compte Rendu d'Anomalies</template>
+	  </category>
+	  <category>
+	    <pattern>CRC</pattern>
+	    <template>Chargé de Renfort Commercial </template>
+	  </category>
+	  <category>
+	    <pattern>CRCE</pattern>
+	    <template>Chargé de Relation Clientèle Entreprises </template>
+	  </category>
+	  <category>
+	    <pattern>CRHF</pattern>
+	    <template>Chargé de Ressources Humaines et de Formation</template>
+	  </category>
+	  <category>
+	    <pattern>CRI EC</pattern>
+	    <template>Compte Rendu d'Inventaire Extra Comptable</template>
+	  </category>
+	  <category>
+	    <pattern>CRO</pattern>
+	    <template>Compte Rendu d'Operation</template>
+	  </category>
+	  <category>
+	    <pattern>DWH</pattern>
+	    <template>Data Ware House</template>
+	  </category>
+	  <category>
+	    <pattern>FDG</pattern>
+	    <template>Finance Développement Groupe</template>
+	  </category>
+	  <category>
+	    <pattern>FDM</pattern>
+	    <template>Fin de Mois</template>
+	  </category>
+	  <category>
+	    <pattern>FG</pattern>
+	    <template>Finance Groupe</template>
+	  </category>
+	  <category>
+	    <pattern>OCC</pattern>
+	    <template>Ouverture de Compte Crédit</template>
+	  </category>
+	  <category>
+	    <pattern>OFS</pattern>
+	    <template>One Financial System</template>
+	  </category>
+	  <category>
+	    <pattern>PCA</pattern>
+	    <template>Plan de Continuite d'Activité</template>
+	  </category>
+	  <category>
+	    <pattern>PFF</pattern>
+	    <template>PF France</template>
+	  </category>
+	  <category>
+	    <pattern>PFT</pattern>
+	    <template>PF Technology</template>
+	  </category>
+	  <category>
+	    <pattern>REFOG</pattern>
+	    <template>Referentiel de l'Organisation du Groupe</template>
+	  </category>
+	  <category>
+	    <pattern>REFOS</pattern>
+	    <template>Referentiel de l'Organisation et de la Sécurité</template>
+	  </category>
+	  <category>
+	    <pattern>SGG</pattern>
+	    <template>Securite Globale Groupe</template>
+	  </category>
+	  <category>
+	    <pattern>SIEF</pattern>
+	    <template>Simple and Eficient</template>
+	  </category>
+	  <category>
+	    <pattern>2OPC</pattern>
+	    <template>Oversight of Operational Permanent Control</template>
+	  </category>
+	  <category>
+	    <pattern>3CIPR</pattern>
+	    <template>Comité de Coordination du Contrôle Interne et de Prévention des Risques </template>
+	  </category>
+	  <category>
+	    <pattern>ACC</pattern>
+	    <template>Arrêté des Comptes de la Clientèle commerciale. Base de données BDDF</template>
+	  </category>
+	  <category>
+	    <pattern>ACV</pattern>
+	    <template>Arrêté des Comptes à Vue (clientèle des particuliers). Base de données BDDF</template>
+	  </category>
+	  <category>
+	    <pattern>ADV</pattern>
+	    <template>Average Daily Volume</template>
+	  </category>
+	  <category>
+	    <pattern>AFG</pattern>
+	    <template>Affaires Fiscales Groupe </template>
+	  </category>
+	  <category>
+	    <pattern>AFGAP</pattern>
+	    <template>Association Française des Gestionnaires Actif Passif</template>
+	  </category>
+	  <category>
+	    <pattern>AFS</pattern>
+	    <template>Available For Sale</template>
+	  </category>
+	  <category>
+	    <pattern>AGAPES</pattern>
+	    <template>Système de pilotage de l’ALM, composé d’un Entrepôt et d’un Infocentre</template>
+	  </category>
+	  <category>
+	    <pattern>AID</pattern>
+	    <template>Alternative Infrastructure Development</template>
+	  </category>
+	  <category>
+	    <pattern>ALCO</pattern>
+	    <template>Assets and Liabilities Committee</template>
+	  </category>
+	  <category>
+	    <pattern>ALM-T</pattern>
+	    <template>Asset and Liabilities Management – Treasury</template>
+	  </category>
+	  <category>
+	    <pattern>Alpha</pattern>
+	    <template>Sensitivity of option value to changes in the volatility smile</template>
+	  </category>
+	  <category>
+	    <pattern>AMA</pattern>
+	    <template>Approche Méthode Avancée </template>
+	  </category>
+	  <category>
+	    <pattern>AMF</pattern>
+	    <template>Autorité des Marchés Financiers</template>
+	  </category>
+	  <category>
+	    <pattern>AML</pattern>
+	    <template>Anti Money Laundering</template>
+	  </category>
+	  <category>
+	    <pattern>AMS</pattern>
+	    <template>Asset Management &amp; Services </template>
+	  </category>
+	  <category>
+	    <pattern>APC</pattern>
+	    <template>Approval Process Co-ordinator</template>
+	  </category>
+	  <category>
+	    <pattern>ARC</pattern>
+	    <template>All Reportings on Capital  </template>
+	  </category>
+	  <category>
+	    <pattern>ARM</pattern>
+	    <template>Adjustable Rate Mortgages</template>
+	  </category>
+	  <category>
+	    <pattern>ARPE</pattern>
+	    <template>EQD cash settlement system</template>
+	  </category>
+	  <category>
+	    <pattern>ASW</pattern>
+	    <template>Asset swap</template>
+	  </category>
+	  <category>
+	    <pattern>ATLAS2</pattern>
+	    <template>Accounting system : Automatisation des Traitements par un Logiciel d’Applications Standard</template>
+	  </category>
+	  <category>
+	    <pattern>ATM</pattern>
+	    <template>At The Money</template>
+	  </category>
+	  <category>
+	    <pattern>ATP</pattern>
+	    <template>Abnormal trading pattern</template>
+	  </category>
+	  <category>
+	    <pattern>B/S</pattern>
+	    <template>Balance Sheet</template>
+	  </category>
+	  <category>
+	    <pattern>B2B</pattern>
+	    <template>Back to back</template>
+	  </category>
+	  <category>
+	    <pattern>B2C</pattern>
+	    <template>Basel 2 Certification  </template>
+	  </category>
+	  <category>
+	    <pattern>BAC</pattern>
+	    <template>Base Comptable Paris</template>
+	  </category>
+	  <category>
+	    <pattern>BACSAR</pattern>
+	    <template>Accounting System</template>
+	  </category>
+	  <category>
+	    <pattern>Bankrec</pattern>
+	    <template>Reconciliation tool</template>
+	  </category>
+	  <category>
+	    <pattern>BAU</pattern>
+	    <template>Business as usual</template>
+	  </category>
+	  <category>
+	    <pattern>BCBS</pattern>
+	    <template>Basel Committee on Banking Supervision</template>
+	  </category>
+	  <category>
+	    <pattern>BCGS</pattern>
+	    <template>Budget Contrôle de gestion stratégique</template>
+	  </category>
+	  <category>
+	    <pattern>BGPC</pattern>
+	    <template>Base Globale du Process Credit</template>
+	  </category>
+	  <category>
+	    <pattern>BIA</pattern>
+	    <template>Basic Indicator Approach </template>
+	  </category>
+	  <category>
+	    <pattern>BM</pattern>
+	    <template>Business Management</template>
+	  </category>
+	  <category>
+	    <pattern>BMRC</pattern>
+	    <template>Base Mondiale des Risques de Crédit</template>
+	  </category>
+	  <category>
+	    <pattern>BMS</pattern>
+	    <template>Besoin en marge solvabilité</template>
+	  </category>
+	  <category>
+	    <pattern>BMTN</pattern>
+	    <template>Bons à Moyen Terme Négociable</template>
+	  </category>
+	  <category>
+	    <pattern>BNPP AM</pattern>
+	    <template>BNP Paribas Asset Management</template>
+	  </category>
+	  <category>
+	    <pattern>BO</pattern>
+	    <template>Back Office</template>
+	  </category>
+	  <category>
+	    <pattern>BOR</pattern>
+	    <template>Borrowing Rate</template>
+	  </category>
+	  <category>
+	    <pattern>bp</pattern>
+	    <template>Basis Point, ie 0.01% </template>
+	  </category>
+	  <category>
+	    <pattern>BVE</pattern>
+	    <template>Base Valeurs Externe </template>
+	  </category>
+	  <category>
+	    <pattern>C&amp;RP</pattern>
+	    <template>Credit &amp; Rating Policies</template>
+	  </category>
+	  <category>
+	    <pattern>C.V.A.</pattern>
+	    <template>Création de valeur pour l’actionnaire</template>
+	  </category>
+	  <category>
+	    <pattern>C++</pattern>
+	    <template>Programming language</template>
+	  </category>
+	  <category>
+	    <pattern>CA</pattern>
+	    <template>Crédit Agricole </template>
+	  </category>
+	  <category>
+	    <pattern>CAD</pattern>
+	    <template>Canadian Dollar</template>
+	  </category>
+	  <category>
+	    <pattern>CAPSTA</pattern>
+	    <template>Capital Stress Test &amp; Anticipation</template>
+	  </category>
+	  <category>
+	    <pattern>CAT</pattern>
+	    <template>Credit Administration Tools</template>
+	  </category>
+	  <category>
+	    <pattern>CB</pattern>
+	    <template>Commission Bancaire</template>
+	  </category>
+	  <category>
+	    <pattern>CB</pattern>
+	    <template>Convertible Bonds</template>
+	  </category>
+	  <category>
+	    <pattern>CC</pattern>
+	    <template>Compte Courant</template>
+	  </category>
+	  <category>
+	    <pattern>CC</pattern>
+	    <template>Client Contribution</template>
+	  </category>
+	  <category>
+	    <pattern>CCC</pattern>
+	    <template>Central Credit Committee</template>
+	  </category>
+	  <category>
+	    <pattern>CCDG</pattern>
+	    <template>Comité de Crédit Direction Générale</template>
+	  </category>
+	  <category>
+	    <pattern>CCEG</pattern>
+	    <template>Comité de Crédit des Entités Groupe</template>
+	  </category>
+	  <category>
+	    <pattern>CCF</pattern>
+	    <template>Facteur de conversion</template>
+	  </category>
+	  <category>
+	    <pattern>CCIRC</pattern>
+	    <template>Comité de Contrôle Interne du risque et de la Conformité</template>
+	  </category>
+	  <category>
+	    <pattern>CCO</pattern>
+	    <template>Contrôle comptable</template>
+	  </category>
+	  <category>
+	    <pattern>CCR</pattern>
+	    <template>Credit Control &amp; Reporting</template>
+	  </category>
+	  <category>
+	    <pattern>CCS</pattern>
+	    <template>Cross-Currency Swap</template>
+	  </category>
+	  <category>
+	    <pattern>Ccy</pattern>
+	    <template>Currency</template>
+	  </category>
+	  <category>
+	    <pattern>CD</pattern>
+	    <template>Certificat de Dépôt</template>
+	  </category>
+	  <category>
+	    <pattern>CD</pattern>
+	    <template>Commodity Derivatives</template>
+	  </category>
+	  <category>
+	    <pattern>CDDG</pattern>
+	    <template>Comité des Débiteurs de Direction Générale</template>
+	  </category>
+	  <category>
+	    <pattern>CdG</pattern>
+	    <template>Contrôle de Gestion </template>
+	  </category>
+	  <category>
+	    <pattern>CDO</pattern>
+	    <template>Credit Default Obligation</template>
+	  </category>
+	  <category>
+	    <pattern>CDS</pattern>
+	    <template>Credit Default Swap</template>
+	  </category>
+	  <category>
+	    <pattern>CEBS</pattern>
+	    <template>Committee of European BankingSupervisors</template>
+	  </category>
+	  <category>
+	    <pattern>CEEMEA</pattern>
+	    <template>Central Eastern Europe, Middle East and Africa</template>
+	  </category>
+	  <category>
+	    <pattern>CEL</pattern>
+	    <template>Compte Épargne Logement</template>
+	  </category>
+	  <category>
+	    <pattern>CER</pattern>
+	    <template>Créances En Recouvrement</template>
+	  </category>
+	  <category>
+	    <pattern>CFI</pattern>
+	    <template>Commodity Futures, Inc.</template>
+	  </category>
+	  <category>
+	    <pattern>CHF</pattern>
+	    <template>Swiss Franc</template>
+	  </category>
+	  <category>
+	    <pattern>CIT</pattern>
+	    <template>Commodities Indexed Trading/Transactions</template>
+	  </category>
+	  <category>
+	    <pattern>CLN</pattern>
+	    <template>Credit Linked Note</template>
+	  </category>
+	  <category>
+	    <pattern>CM</pattern>
+	    <template>Capital Market </template>
+	  </category>
+	  <category>
+	    <pattern>CMD</pattern>
+	    <template>Commodities</template>
+	  </category>
+	  <category>
+	    <pattern>CMO</pattern>
+	    <template>Collateral Management Operations </template>
+	  </category>
+	  <category>
+	    <pattern>CMRC</pattern>
+	    <template>Capital Market Risk Committee</template>
+	  </category>
+	  <category>
+	    <pattern>CMS</pattern>
+	    <template>Constant Maturity Swap</template>
+	  </category>
+	  <category>
+	    <pattern>CMSCSTS</pattern>
+	    <template>Constant Maturity Swap Callable Spread Time Swap</template>
+	  </category>
+	  <category>
+	    <pattern>COB</pattern>
+	    <template>Close of business</template>
+	  </category>
+	  <category>
+	    <pattern>CODA</pattern>
+	    <template>BNP Paribas Arbitrage accounting system</template>
+	  </category>
+	  <category>
+	    <pattern>COLCMG</pattern>
+	    <template>Collateral Management Book</template>
+	  </category>
+	  <category>
+	    <pattern>Collat </pattern>
+	    <template>Collateralised </template>
+	  </category>
+	  <category>
+	    <pattern>COMEX</pattern>
+	    <template>Comité Exécutif</template>
+	  </category>
+	  <category>
+	    <pattern>Commo</pattern>
+	    <template>Commodity</template>
+	  </category>
+	  <category>
+	    <pattern>Config Manager</pattern>
+	    <template>Fixed Income market and static data storage</template>
+	  </category>
+	  <category>
+	    <pattern>COO</pattern>
+	    <template>Chief Operation Officer</template>
+	  </category>
+	  <category>
+	    <pattern>CoR</pattern>
+	    <template>Cost of Risk</template>
+	  </category>
+	  <category>
+	    <pattern>CORC</pattern>
+	    <template>Coordination opérationnelle reporting capital</template>
+	  </category>
+	  <category>
+	    <pattern>COREM</pattern>
+	    <template>Control and Resource Management</template>
+	  </category>
+	  <category>
+	    <pattern>COREP</pattern>
+	    <template>Common Reporting Standards </template>
+	  </category>
+	  <category>
+	    <pattern>CP</pattern>
+	    <template>Counterparty</template>
+	  </category>
+	  <category>
+	    <pattern>CPA</pattern>
+	    <template>Capital &amp; Portfolio Analysis</template>
+	  </category>
+	  <category>
+	    <pattern>CPI</pattern>
+	    <template>Checking Plus Interest </template>
+	  </category>
+	  <category>
+	    <pattern>CRBF</pattern>
+	    <template>Comité de Réglementation Bancaire et Financière </template>
+	  </category>
+	  <category>
+	    <pattern>CRC</pattern>
+	    <template>Credit Risk Control</template>
+	  </category>
+	  <category>
+	    <pattern>CRCO</pattern>
+	    <template>Credit Risk Control Officer</template>
+	  </category>
+	  <category>
+	    <pattern>CRD</pattern>
+	    <template>Capital Requirements Directive</template>
+	  </category>
+	  <category>
+	    <pattern>CRDS</pattern>
+	    <template>Core Referential Data System</template>
+	  </category>
+	  <category>
+	    <pattern>CRF</pattern>
+	    <template>Credit Risk France</template>
+	  </category>
+	  <category>
+	    <pattern>CRFI</pattern>
+	    <template>Counterparty Risk and Financial Institutions</template>
+	  </category>
+	  <category>
+	    <pattern>CRI</pattern>
+	    <template>Credit Risk International</template>
+	  </category>
+	  <category>
+	    <pattern>CRIF</pattern>
+	    <template>Callable Ratchet Inverse Floater</template>
+	  </category>
+	  <category>
+	    <pattern>CRO</pattern>
+	    <template>Chief Risk Officer</template>
+	  </category>
+	  <category>
+	    <pattern>CROS</pattern>
+	    <template>Control, Reporting, Organisation &amp; Support</template>
+	  </category>
+	  <category>
+	    <pattern>CRP</pattern>
+	    <template>Credit &amp; Rating Policies </template>
+	  </category>
+	  <category>
+	    <pattern>CRP</pattern>
+	    <template>Compensation Review Process</template>
+	  </category>
+	  <category>
+	    <pattern>CRR</pattern>
+	    <template>Capital Requirements Regulation</template>
+	  </category>
+	  <category>
+	    <pattern>CS</pattern>
+	    <template>Currency Swap</template>
+	  </category>
+	  <category>
+	    <pattern>CS</pattern>
+	    <template>Credit Suisse</template>
+	  </category>
+	  <category>
+	    <pattern>CSA</pattern>
+	    <template>Credit Support Annex</template>
+	  </category>
+	  <category>
+	    <pattern>CT</pattern>
+	    <template>Court Terme</template>
+	  </category>
+	  <category>
+	    <pattern>CTP</pattern>
+	    <template>Counterparty</template>
+	  </category>
+	  <category>
+	    <pattern>CVA</pattern>
+	    <template>Credit Value Adjustment</template>
+	  </category>
+	  <category>
+	    <pattern>CVE</pattern>
+	    <template>Création de valeur pour l’entreprise</template>
+	  </category>
+	  <category>
+	    <pattern>D1</pattern>
+	    <template>Delta One</template>
+	  </category>
+	  <category>
+	    <pattern>DA</pattern>
+	    <template>Digital Adjustment</template>
+	  </category>
+	  <category>
+	    <pattern>DAV</pattern>
+	    <template>Dépôt A Vue</template>
+	  </category>
+	  <category>
+	    <pattern>DB</pattern>
+	    <template>Deutsche Bank</template>
+	  </category>
+	  <category>
+	    <pattern>DBT</pattern>
+	    <template>Doubtful </template>
+	  </category>
+	  <category>
+	    <pattern>DBX</pattern>
+	    <template>Deutsche Bank Exchange</template>
+	  </category>
+	  <category>
+	    <pattern>DC</pattern>
+	    <template>Discount Curve</template>
+	  </category>
+	  <category>
+	    <pattern>DEA</pattern>
+	    <template>Diplôme d’Études Approfondies</template>
+	  </category>
+	  <category>
+	    <pattern>Delta</pattern>
+	    <template>Sensitivity of option value to changes in the underlying asset's price</template>
+	  </category>
+	  <category>
+	    <pattern>DF</pattern>
+	    <template>Discount Factor</template>
+	  </category>
+	  <category>
+	    <pattern>DKK</pattern>
+	    <template>Danish Krone </template>
+	  </category>
+	  <category>
+	    <pattern>DLR</pattern>
+	    <template>Date Limite de Réintégration</template>
+	  </category>
+	  <category>
+	    <pattern>DMG</pattern>
+	    <template>Derivatives Marketing Group</template>
+	  </category>
+	  <category>
+	    <pattern>DTCC</pattern>
+	    <template>Depository Trust &amp; Clearing Corporation</template>
+	  </category>
+	  <category>
+	    <pattern>DVA</pattern>
+	    <template>Debt Valuation Adjustment</template>
+	  </category>
+	  <category>
+	    <pattern>DVM</pattern>
+	    <template>Durée de Vie Moyenne</template>
+	  </category>
+	  <category>
+	    <pattern>DVS</pattern>
+	    <template>Fixed income pricing system</template>
+	  </category>
+	  <category>
+	    <pattern>E</pattern>
+	    <template>Efficiency</template>
+	  </category>
+	  <category>
+	    <pattern>EAD</pattern>
+	    <template>Exposition au défaut</template>
+	  </category>
+	  <category>
+	    <pattern>EBO</pattern>
+	    <template>European back office</template>
+	  </category>
+	  <category>
+	    <pattern>ECG</pattern>
+	    <template>European Corporate Group</template>
+	  </category>
+	  <category>
+	    <pattern>ECO</pattern>
+	    <template>Exposure Control Officer</template>
+	  </category>
+	  <category>
+	    <pattern>EDS</pattern>
+	    <template>Equity Derivatives Research</template>
+	  </category>
+	  <category>
+	    <pattern>EDX</pattern>
+	    <template>Engagements Douteux</template>
+	  </category>
+	  <category>
+	    <pattern>EEM</pattern>
+	    <template>Exotic exposure management</template>
+	  </category>
+	  <category>
+	    <pattern>EJ</pattern>
+	    <template>Entité juridique </template>
+	  </category>
+	  <category>
+	    <pattern>EMF</pattern>
+	    <template>Équipe Modèles Financiers</template>
+	  </category>
+	  <category>
+	    <pattern>Emg. Markets</pattern>
+	    <template>Emerging Markets </template>
+	  </category>
+	  <category>
+	    <pattern>EMIR</pattern>
+	    <template>European Market Infrastructure Regulation</template>
+	  </category>
+	  <category>
+	    <pattern>EMK</pattern>
+	    <template>Emerging Markets</template>
+	  </category>
+	  <category>
+	    <pattern>EMO</pattern>
+	    <template>Exposure Management Officer</template>
+	  </category>
+	  <category>
+	    <pattern>EMTN</pattern>
+	    <template>Euro Medium Term Note</template>
+	  </category>
+	  <category>
+	    <pattern>ENSAE</pattern>
+	    <template>École Nationale de la Statistique et de l’Administration Économique</template>
+	  </category>
+	  <category>
+	    <pattern>EONIA</pattern>
+	    <template>Euro Overnight Index Average</template>
+	  </category>
+	  <category>
+	    <pattern>EoY</pattern>
+	    <template>End of Year</template>
+	  </category>
+	  <category>
+	    <pattern>EPC</pattern>
+	    <template>Executive Policy Committee </template>
+	  </category>
+	  <category>
+	    <pattern>EPC</pattern>
+	    <template>Executive Product Committee</template>
+	  </category>
+	  <category>
+	    <pattern>EPE</pattern>
+	    <template>Expected positive exposure</template>
+	  </category>
+	  <category>
+	    <pattern>EQD</pattern>
+	    <template>Equity and Derivatives </template>
+	  </category>
+	  <category>
+	    <pattern>EQF</pattern>
+	    <template>Equity Financing</template>
+	  </category>
+	  <category>
+	    <pattern>EQS</pattern>
+	    <template>Equity Swap</template>
+	  </category>
+	  <category>
+	    <pattern>ES</pattern>
+	    <template>Expected Shortfall </template>
+	  </category>
+	  <category>
+	    <pattern>ES, Eq. Solutions</pattern>
+	    <template>Equipment Solutions </template>
+	  </category>
+	  <category>
+	    <pattern>ET</pattern>
+	    <template>Exceptional transaction</template>
+	  </category>
+	  <category>
+	    <pattern>ETF</pattern>
+	    <template>Exchange-Traded Fund</template>
+	  </category>
+	  <category>
+	    <pattern>ETG</pattern>
+	    <template>Electronic Trading Group. EQD front office booking system – vanilla products</template>
+	  </category>
+	  <category>
+	    <pattern>ETO</pattern>
+	    <template>Early Termination Option</template>
+	  </category>
+	  <category>
+	    <pattern>ETP</pattern>
+	    <template>Equivalent temps plein </template>
+	  </category>
+	  <category>
+	    <pattern>EU</pattern>
+	    <template>Europe</template>
+	  </category>
+	  <category>
+	    <pattern>EUR </pattern>
+	    <template>Euro</template>
+	  </category>
+	  <category>
+	    <pattern>EURIBOR</pattern>
+	    <template>Euro Inter Bank Offered Rate</template>
+	  </category>
+	  <category>
+	    <pattern>EVE</pattern>
+	    <template>Economic Value of Equity </template>
+	  </category>
+	  <category>
+	    <pattern>EXCO</pattern>
+	    <template>Executive Committee</template>
+	  </category>
+	  <category>
+	    <pattern>F&amp;F</pattern>
+	    <template>Flow and Financing</template>
+	  </category>
+	  <category>
+	    <pattern>FACT</pattern>
+	    <template>Accounting reporting tool</template>
+	  </category>
+	  <category>
+	    <pattern>FAST</pattern>
+	    <template>EQD front office booking system - exotic products</template>
+	  </category>
+	  <category>
+	    <pattern>FC</pattern>
+	    <template>Franchise Clients</template>
+	  </category>
+	  <category>
+	    <pattern>FDG</pattern>
+	    <template>Finance Développement Groupe </template>
+	  </category>
+	  <category>
+	    <pattern>FI</pattern>
+	    <template>Fixed Income</template>
+	  </category>
+	  <category>
+	    <pattern>FI IT</pattern>
+	    <template>Fixed Income Information Technology</template>
+	  </category>
+	  <category>
+	    <pattern>FIG</pattern>
+	    <template>Financial Institutions Group</template>
+	  </category>
+	  <category>
+	    <pattern>FIDES</pattern>
+	    <template>Financial Institutions Decision and Exposure Supervision </template>
+	  </category>
+	  <category>
+	    <pattern>FINREP</pattern>
+	    <template>Financial Reporting Standards </template>
+	  </category>
+	  <category>
+	    <pattern>FIRST</pattern>
+	    <template>Fixed Income Research and Strategies</template>
+	  </category>
+	  <category>
+	    <pattern>FLG</pattern>
+	    <template>Funding and Liquidity Group</template>
+	  </category>
+	  <category>
+	    <pattern>FO</pattern>
+	    <template>Front Office</template>
+	  </category>
+	  <category>
+	    <pattern>FOCUS</pattern>
+	    <template>Credit Derivatives trade capture application</template>
+	  </category>
+	  <category>
+	    <pattern>FOREX</pattern>
+	    <template>Foreign Exchange markets</template>
+	  </category>
+	  <category>
+	    <pattern>FORMA</pattern>
+	    <template>Front Office Risk Mandate and Authority</template>
+	  </category>
+	  <category>
+	    <pattern>FP</pattern>
+	    <template>Fonds propres</template>
+	  </category>
+	  <category>
+	    <pattern>FR</pattern>
+	    <template>France</template>
+	  </category>
+	  <category>
+	    <pattern>FRA</pattern>
+	    <template>Forward Rate Agreement</template>
+	  </category>
+	  <category>
+	    <pattern>FRN</pattern>
+	    <template>Floating Rate Note</template>
+	  </category>
+	  <category>
+	    <pattern>FRT</pattern>
+	    <template>Flow Risk Team</template>
+	  </category>
+	  <category>
+	    <pattern>FSA</pattern>
+	    <template>Financial Services Authority</template>
+	  </category>
+	  <category>
+	    <pattern>FTC</pattern>
+	    <template>Fixed Term Contract</template>
+	  </category>
+	  <category>
+	    <pattern>FTE</pattern>
+	    <template>Full Time Employee</template>
+	  </category>
+	  <category>
+	    <pattern>FUR</pattern>
+	    <template>Frequent User Rate</template>
+	  </category>
+	  <category>
+	    <pattern>FVA</pattern>
+	    <template>Funding Valuation Adjustment</template>
+	  </category>
+	  <category>
+	    <pattern>FWD</pattern>
+	    <template>Forward Trading Desk</template>
+	  </category>
+	  <category>
+	    <pattern>FX</pattern>
+	    <template>Foreign Exchange</template>
+	  </category>
+	  <category>
+	    <pattern>FXD</pattern>
+	    <template>Foreign Exchange Derivatives </template>
+	  </category>
+	  <category>
+	    <pattern>FXMM</pattern>
+	    <template>Forex Money Market</template>
+	  </category>
+	  <category>
+	    <pattern>FXO</pattern>
+	    <template>Forex Back Office System</template>
+	  </category>
+	  <category>
+	    <pattern>FXSWP</pattern>
+	    <template>Forex Swap</template>
+	  </category>
+	  <category>
+	    <pattern>FXT</pattern>
+	    <template>Fixed income front office booking system</template>
+	  </category>
+	  <category>
+	    <pattern>Gamma</pattern>
+	    <template>Sensitivity of the delta to changes in the underlying price </template>
+	  </category>
+	  <category>
+	    <pattern>GBP</pattern>
+	    <template>British Pound Sterling</template>
+	  </category>
+	  <category>
+	    <pattern>GC</pattern>
+	    <template>Global Credit</template>
+	  </category>
+	  <category>
+	    <pattern>GC2R</pattern>
+	    <template>Group Credit Risk Reporting </template>
+	  </category>
+	  <category>
+	    <pattern>GCC</pattern>
+	    <template>Group Control &amp; Certification</template>
+	  </category>
+	  <category>
+	    <pattern>GCP</pattern>
+	    <template>Global Credit Policy</template>
+	  </category>
+	  <category>
+	    <pattern>GDF</pattern>
+	    <template>Group Development and Finance</template>
+	  </category>
+	  <category>
+	    <pattern>GEaR</pattern>
+	    <template>Gross Earnings at Risk: 1-day 99% Value at Risk</template>
+	  </category>
+	  <category>
+	    <pattern>GECD</pattern>
+	    <template>Global Equities and Commodity Derivatives</template>
+	  </category>
+	  <category>
+	    <pattern>GEM</pattern>
+	    <template>Global Emerging Market</template>
+	  </category>
+	  <category>
+	    <pattern>GFC</pattern>
+	    <template>Global Financial Control</template>
+	  </category>
+	  <category>
+	    <pattern>GFX</pattern>
+	    <template>Global Foreign Exchange</template>
+	  </category>
+	  <category>
+	    <pattern>Govies </pattern>
+	    <template>Government Bonds</template>
+	  </category>
+	  <category>
+	    <pattern>GPC</pattern>
+	    <template>Global Product Control</template>
+	  </category>
+	  <category>
+	    <pattern>GPRIME</pattern>
+	    <template>EQD valuation system</template>
+	  </category>
+	  <category>
+	    <pattern>GR</pattern>
+	    <template>Germany</template>
+	  </category>
+	  <category>
+	    <pattern>GRAR</pattern>
+	    <template>Global Risk Analysis and Reporting</template>
+	  </category>
+	  <category>
+	    <pattern>GREEN</pattern>
+	    <template>Group Referentials Reporting Evaluation &amp; Norms</template>
+	  </category>
+	  <category>
+	    <pattern>GRFN</pattern>
+	    <template>General Risk Function. Proprietary payoff description language</template>
+	  </category>
+	  <category>
+	    <pattern>GRM</pattern>
+	    <template>Global Risk Management</template>
+	  </category>
+	  <category>
+	    <pattern>GRN</pattern>
+	    <template>Gestion Risque Normal</template>
+	  </category>
+	  <category>
+	    <pattern>GRP</pattern>
+	    <template>Group Risk Portfolio</template>
+	  </category>
+	  <category>
+	    <pattern>GRR</pattern>
+	    <template>Global Recovery Rates</template>
+	  </category>
+	  <category>
+	    <pattern>GS</pattern>
+	    <template>Goldman Sachs</template>
+	  </category>
+	  <category>
+	    <pattern>GSG</pattern>
+	    <template>Global Structuring Group</template>
+	  </category>
+	  <category>
+	    <pattern>GTRM</pattern>
+	    <template>Global Trading Risk Measurement</template>
+	  </category>
+	  <category>
+	    <pattern>HA</pattern>
+	    <template>Hybrid Adjustment</template>
+	  </category>
+	  <category>
+	    <pattern>HB</pattern>
+	    <template>Hors Bilan</template>
+	  </category>
+	  <category>
+	    <pattern>HERMES</pattern>
+	    <template>EQD cash settlement system</template>
+	  </category>
+	  <category>
+	    <pattern>HF</pattern>
+	    <template>Hedge Fund</template>
+	  </category>
+	  <category>
+	    <pattern>HFT</pattern>
+	    <template>Held For Trading </template>
+	  </category>
+	  <category>
+	    <pattern>HFTI</pattern>
+	    <template>Held For Trading Intrinsic </template>
+	  </category>
+	  <category>
+	    <pattern>HK</pattern>
+	    <template>Hong Kong</template>
+	  </category>
+	  <category>
+	    <pattern>HKD</pattern>
+	    <template>Hong Kong Dollar</template>
+	  </category>
+	  <category>
+	    <pattern>HMT</pattern>
+	    <template>High Margin Transaction</template>
+	  </category>
+	  <category>
+	    <pattern>HR</pattern>
+	    <template>High Risk</template>
+	  </category>
+	  <category>
+	    <pattern>HR</pattern>
+	    <template>Human Resource</template>
+	  </category>
+	  <category>
+	    <pattern>HTM</pattern>
+	    <template>Held To Maturity </template>
+	  </category>
+	  <category>
+	    <pattern>IAS</pattern>
+	    <template>International Accounting Standards</template>
+	  </category>
+	  <category>
+	    <pattern>ICAT</pattern>
+	    <template>SOHO security service</template>
+	  </category>
+	  <category>
+	    <pattern>ICG</pattern>
+	    <template>Institutional Client Group</template>
+	  </category>
+	  <category>
+	    <pattern>IDEM</pattern>
+	    <template>Italian Derivatives Equity Market</template>
+	  </category>
+	  <category>
+	    <pattern>IG</pattern>
+	    <template>Inspection Générale </template>
+	  </category>
+	  <category>
+	    <pattern>IH</pattern>
+	    <template>Incident Historique </template>
+	  </category>
+	  <category>
+	    <pattern>IM</pattern>
+	    <template>Initial Margin</template>
+	  </category>
+	  <category>
+	    <pattern>IMAP</pattern>
+	    <template>Currency Options models library</template>
+	  </category>
+	  <category>
+	    <pattern>Intellimatch</pattern>
+	    <template>Reconciliation tool</template>
+	  </category>
+	  <category>
+	    <pattern>IP</pattern>
+	    <template>Incident Potentiel </template>
+	  </category>
+	  <category>
+	    <pattern>IP, Inv. Partners</pattern>
+	    <template>Investment Partners </template>
+	  </category>
+	  <category>
+	    <pattern>iPFC</pattern>
+	    <template>Intermediary PFC</template>
+	  </category>
+	  <category>
+	    <pattern>IPILOT</pattern>
+	    <template>LPM front office booking system</template>
+	  </category>
+	  <category>
+	    <pattern>IPV</pattern>
+	    <template>Independent Pricing Verification</template>
+	  </category>
+	  <category>
+	    <pattern>IR</pattern>
+	    <template>Interest Rates</template>
+	  </category>
+	  <category>
+	    <pattern>IR/FX</pattern>
+	    <template>Interest Rate/Foreign Exchange</template>
+	  </category>
+	  <category>
+	    <pattern>IRBA</pattern>
+	    <template>Internal rating based approach </template>
+	  </category>
+	  <category>
+	    <pattern>IRC</pattern>
+	    <template>Incremental Risk Charge</template>
+	  </category>
+	  <category>
+	    <pattern>IRD</pattern>
+	    <template>Interest Rates Derivatives </template>
+	  </category>
+	  <category>
+	    <pattern>IRFX</pattern>
+	    <template>Interest Rate and Foreign Echange</template>
+	  </category>
+	  <category>
+	    <pattern>IRG</pattern>
+	    <template>Interest Rate Group</template>
+	  </category>
+	  <category>
+	    <pattern>IRLP</pattern>
+	    <template>Interest Rate Linear Product</template>
+	  </category>
+	  <category>
+	    <pattern>IRM</pattern>
+	    <template>Investor Relationship Management</template>
+	  </category>
+	  <category>
+	    <pattern>IROP</pattern>
+	    <template>Interest Rate Options</template>
+	  </category>
+	  <category>
+	    <pattern>IROP EEMEA</pattern>
+	    <template>Interest Rate Options Eastern Europe Middle East and Africa</template>
+	  </category>
+	  <category>
+	    <pattern>IROP EM</pattern>
+	    <template>Interest Rate Options Emerging Market</template>
+	  </category>
+	  <category>
+	    <pattern>IROP EU</pattern>
+	    <template>Interest Rate Options Europe</template>
+	  </category>
+	  <category>
+	    <pattern>IROP EU EX</pattern>
+	    <template>Interest Rate Options Europe Exotics</template>
+	  </category>
+	  <category>
+	    <pattern>IROP EU EXRTL</pattern>
+	    <template>Interest Rate Options Europe Exotics Retail Paris</template>
+	  </category>
+	  <category>
+	    <pattern>IROP EU VAN</pattern>
+	    <template>Interest Rate Options Europe Vanilla</template>
+	  </category>
+	  <category>
+	    <pattern>IROP MGT</pattern>
+	    <template>Interest Rate Options Management</template>
+	  </category>
+	  <category>
+	    <pattern>IRPH</pattern>
+	    <template>Indices de Referencia de Prestamos Hipotecarios </template>
+	  </category>
+	  <category>
+	    <pattern>IRS</pattern>
+	    <template>Interest Rate Swap</template>
+	  </category>
+	  <category>
+	    <pattern>ISARS</pattern>
+	    <template>Information Security Access Request System, the London security tool to administer and automate the approval of requests for applications and directories for all London staff and overseas users on London systems</template>
+	  </category>
+	  <category>
+	    <pattern>IT</pattern>
+	    <template>Information Technology</template>
+	  </category>
+	  <category>
+	    <pattern>ITO</pattern>
+	    <template>Information Technology and Operations</template>
+	  </category>
+	  <category>
+	    <pattern>JPM</pattern>
+	    <template>JP Morgan</template>
+	  </category>
+	  <category>
+	    <pattern>JPY</pattern>
+	    <template>Japanese Yen</template>
+	  </category>
+	  <category>
+	    <pattern>JV</pattern>
+	    <template>Joint Venture</template>
+	  </category>
+	  <category>
+	    <pattern>K+</pattern>
+	    <template>Outil Front Office de l’ALM </template>
+	  </category>
+	  <category>
+	    <pattern>KDE</pattern>
+	    <template>Sensitive Accounts tracking system</template>
+	  </category>
+	  <category>
+	    <pattern>KEUR</pattern>
+	    <template>Thousands Euro</template>
+	  </category>
+	  <category>
+	    <pattern>Khida</pattern>
+	    <template>Sensitivity to Khi parameter </template>
+	  </category>
+	  <category>
+	    <pattern>KMP</pattern>
+	    <template>Key Monitoring Point </template>
+	  </category>
+	  <category>
+	    <pattern>KONDOR+</pattern>
+	    <template>ALM-T front office booking system</template>
+	  </category>
+	  <category>
+	    <pattern>KPI</pattern>
+	    <template>Key Performance Indicators</template>
+	  </category>
+	  <category>
+	    <pattern>KRW</pattern>
+	    <template>Korean Won</template>
+	  </category>
+	  <category>
+	    <pattern>KYC</pattern>
+	    <template>Know Your Customer</template>
+	  </category>
+	  <category>
+	    <pattern>L&amp;R</pattern>
+	    <template>Loans and Receivables </template>
+	  </category>
+	  <category>
+	    <pattern>L2</pattern>
+	    <template>Level 2</template>
+	  </category>
+	  <category>
+	    <pattern>LAL</pattern>
+	    <template>Look alike</template>
+	  </category>
+	  <category>
+	    <pattern>LAP</pattern>
+	    <template>BNP Paribas London accounting system</template>
+	  </category>
+	  <category>
+	    <pattern>LCH</pattern>
+	    <template>London Clearing House</template>
+	  </category>
+	  <category>
+	    <pattern>LDD</pattern>
+	    <template>Livret de Développement Durable</template>
+	  </category>
+	  <category>
+	    <pattern>LDN</pattern>
+	    <template>London</template>
+	  </category>
+	  <category>
+	    <pattern>LEQ</pattern>
+	    <template>Loan Equivalent</template>
+	  </category>
+	  <category>
+	    <pattern>LGD</pattern>
+	    <template>Perte en cas de défaut</template>
+	  </category>
+	  <category>
+	    <pattern>LGM3FSV</pattern>
+	    <template>Linear Gaussian Markovian 3 Factor Stochastic Volatility</template>
+	  </category>
+	  <category>
+	    <pattern>LHR</pattern>
+	    <template>Local Head of Risk </template>
+	  </category>
+	  <category>
+	    <pattern>LIBOR</pattern>
+	    <template>London Inter Bank Offered Rate</template>
+	  </category>
+	  <category>
+	    <pattern>LIMRX</pattern>
+	    <template>Market Risk Limit System</template>
+	  </category>
+	  <category>
+	    <pattern>LINK</pattern>
+	    <template>Fixed Income Customer Relationship Management System</template>
+	  </category>
+	  <category>
+	    <pattern>LPM</pattern>
+	    <template>Loan and Portfolio Management</template>
+	  </category>
+	  <category>
+	    <pattern>LSI</pattern>
+	    <template>IT and operations within CIB</template>
+	  </category>
+	  <category>
+	    <pattern>LTIR</pattern>
+	    <template>Long term interest rate</template>
+	  </category>
+	  <category>
+	    <pattern>LTMG</pattern>
+	    <template>Legal &amp; Transaction Management Group</template>
+	  </category>
+	  <category>
+	    <pattern>LVA</pattern>
+	    <template>Liquidity Valuation Adjustment</template>
+	  </category>
+	  <category>
+	    <pattern>M</pattern>
+	    <template>Maturité / Million / Mois / Months</template>
+	  </category>
+	  <category>
+	    <pattern>MAC</pattern>
+	    <template>Model Approval Committee</template>
+	  </category>
+	  <category>
+	    <pattern>MAD</pattern>
+	    <template>Multi-Asset Derivatives: Fixed Income booking system</template>
+	  </category>
+	  <category>
+	    <pattern>MAOS</pattern>
+	    <template>Market Players Account Opening System</template>
+	  </category>
+	  <category>
+	    <pattern>MAP</pattern>
+	    <template>Market Parameters</template>
+	  </category>
+	  <category>
+	    <pattern>MAP Review</pattern>
+	    <template>Market Parameter Review </template>
+	  </category>
+	  <category>
+	    <pattern>MCoRA</pattern>
+	    <template>Market and Counterparty Risk Analytics</template>
+	  </category>
+	  <category>
+	    <pattern>MdL</pattern>
+	    <template>Metropolitana de Lisboa</template>
+	  </category>
+	  <category>
+	    <pattern>MDS</pattern>
+	    <template>EQD Market data system</template>
+	  </category>
+	  <category>
+	    <pattern>MEB</pattern>
+	    <template>Murex Equity Back</template>
+	  </category>
+	  <category>
+	    <pattern>MEF</pattern>
+	    <template>Murex Equity Front</template>
+	  </category>
+	  <category>
+	    <pattern>MEFF</pattern>
+	    <template>Mercado Español de Futuros Financieros </template>
+	  </category>
+	  <category>
+	    <pattern>MEUR</pattern>
+	    <template>Million Euro</template>
+	  </category>
+	  <category>
+	    <pattern>Mgt</pattern>
+	    <template>Management</template>
+	  </category>
+	  <category>
+	    <pattern>MiFID</pattern>
+	    <template>Markets in Financial Instruments Directive</template>
+	  </category>
+	  <category>
+	    <pattern>MLP</pattern>
+	    <template>Market Liquidity Provider</template>
+	  </category>
+	  <category>
+	    <pattern>MLR</pattern>
+	    <template>Market and Liquidity Risk </template>
+	  </category>
+	  <category>
+	    <pattern>MM</pattern>
+	    <template>Money Market </template>
+	  </category>
+	  <category>
+	    <pattern>MMEUR</pattern>
+	    <template>Billion Euro</template>
+	  </category>
+	  <category>
+	    <pattern>MMUSD</pattern>
+	    <template>Billion US dollar</template>
+	  </category>
+	  <category>
+	    <pattern>MO</pattern>
+	    <template>Middle Office</template>
+	  </category>
+	  <category>
+	    <pattern>MOBILIS</pattern>
+	    <template>EQD cash processing system</template>
+	  </category>
+	  <category>
+	    <pattern>MoU</pattern>
+	    <template>Memorandum of Understanding</template>
+	  </category>
+	  <category>
+	    <pattern>MPQR</pattern>
+	    <template>Monthly Process Quality Report</template>
+	  </category>
+	  <category>
+	    <pattern>MR</pattern>
+	    <template>Medium Risk</template>
+	  </category>
+	  <category>
+	    <pattern>MRA</pattern>
+	    <template>Market Risk Analyst</template>
+	  </category>
+	  <category>
+	    <pattern>MRX</pattern>
+	    <template>Market Risks Explorer</template>
+	  </category>
+	  <category>
+	    <pattern>MS</pattern>
+	    <template>Morgan Stanley</template>
+	  </category>
+	  <category>
+	    <pattern>MSCI</pattern>
+	    <template>Morgan Stanley Composite Index</template>
+	  </category>
+	  <category>
+	    <pattern>MTA</pattern>
+	    <template>Minimum Transfer Amount</template>
+	  </category>
+	  <category>
+	    <pattern>MTFs</pattern>
+	    <template>Multilateral Trading Facility</template>
+	  </category>
+	  <category>
+	    <pattern>MtM</pattern>
+	    <template>Marked to Market</template>
+	  </category>
+	  <category>
+	    <pattern>MTN</pattern>
+	    <template>Medium Term Note</template>
+	  </category>
+	  <category>
+	    <pattern>Murex</pattern>
+	    <template>Rate Back office system</template>
+	  </category>
+	  <category>
+	    <pattern>MVP</pattern>
+	    <template>Model Validation Process </template>
+	  </category>
+	  <category>
+	    <pattern>MY</pattern>
+	    <template>Man Year</template>
+	  </category>
+	  <category>
+	    <pattern>NAC</pattern>
+	    <template>New Activity Committee</template>
+	  </category>
+	  <category>
+	    <pattern>NCI</pattern>
+	    <template>Normes Comptables Internationales</template>
+	  </category>
+	  <category>
+	    <pattern>NDF</pattern>
+	    <template>Non-Deliverable Forward</template>
+	  </category>
+	  <category>
+	    <pattern>NEM</pattern>
+	    <template>New Excess Manager</template>
+	  </category>
+	  <category>
+	    <pattern>NIE</pattern>
+	    <template>Net Income Exposure</template>
+	  </category>
+	  <category>
+	    <pattern>NL</pattern>
+	    <template>Netherlands</template>
+	  </category>
+	  <category>
+	    <pattern>NPC</pattern>
+	    <template>New Product Committee </template>
+	  </category>
+	  <category>
+	    <pattern>NY</pattern>
+	    <template>New York</template>
+	  </category>
+	  <category>
+	    <pattern>NZD</pattern>
+	    <template>New Zealand Dollar</template>
+	  </category>
+	  <category>
+	    <pattern>OA</pattern>
+	    <template>Own Account</template>
+	  </category>
+	  <category>
+	    <pattern>OBI</pattern>
+	    <template>Outside Business Interest </template>
+	  </category>
+	  <category>
+	    <pattern>OCDE</pattern>
+	    <template>Organisation de Coopération et de Développement Économiques</template>
+	  </category>
+	  <category>
+	    <pattern>OE</pattern>
+	    <template>Operating Entity</template>
+	  </category>
+	  <category>
+	    <pattern>OIC</pattern>
+	    <template>Official Institutions Coverage</template>
+	  </category>
+	  <category>
+	    <pattern>OIS</pattern>
+	    <template>Overnight Index Swap</template>
+	  </category>
+	  <category>
+	    <pattern>OMR</pattern>
+	    <template>Back office system</template>
+	  </category>
+	  <category>
+	    <pattern>ONFFE</pattern>
+	    <template>Overnight Fed Funds rate</template>
+	  </category>
+	  <category>
+	    <pattern>OP</pattern>
+	    <template>Options</template>
+	  </category>
+	  <category>
+	    <pattern>Op</pattern>
+	    <template>Opérationnel</template>
+	  </category>
+	  <category>
+	    <pattern>OPC</pattern>
+	    <template>Operational and Permanent Control team</template>
+	  </category>
+	  <category>
+	    <pattern>OPS</pattern>
+	    <template>Operations</template>
+	  </category>
+	  <category>
+	    <pattern>OPUS</pattern>
+	    <template>EQD Payoff system – exotic products (OTC Product Universal Storage)</template>
+	  </category>
+	  <category>
+	    <pattern>ORCA</pattern>
+	    <template>EQD valuation system – exotic products</template>
+	  </category>
+	  <category>
+	    <pattern>OTC</pattern>
+	    <template>Over The Counter</template>
+	  </category>
+	  <category>
+	    <pattern>OTM</pattern>
+	    <template>Out of the Money</template>
+	  </category>
+	  <category>
+	    <pattern>P&amp;L</pattern>
+	    <template>Profit and Loss</template>
+	  </category>
+	  <category>
+	    <pattern>PA</pattern>
+	    <template>Public Administrations</template>
+	  </category>
+	  <category>
+	    <pattern>PA</pattern>
+	    <template>Portfolio Analysis</template>
+	  </category>
+	  <category>
+	    <pattern>PAD</pattern>
+	    <template>Personal Account Dealing </template>
+	  </category>
+	  <category>
+	    <pattern>PAR</pattern>
+	    <template>Paris</template>
+	  </category>
+	  <category>
+	    <pattern>PAT</pattern>
+	    <template>Portfolio Analysis Team </template>
+	  </category>
+	  <category>
+	    <pattern>PC</pattern>
+	    <template>Product Control</template>
+	  </category>
+	  <category>
+	    <pattern>PD</pattern>
+	    <template>Probabilité de défaut</template>
+	  </category>
+	  <category>
+	    <pattern>PDE</pattern>
+	    <template>Partial Differential Equations</template>
+	  </category>
+	  <category>
+	    <pattern>PEA</pattern>
+	    <template>Plan d'épargne en actions</template>
+	  </category>
+	  <category>
+	    <pattern>PEL</pattern>
+	    <template>Plan Épargne Logement</template>
+	  </category>
+	  <category>
+	    <pattern>PFC</pattern>
+	    <template>Product and Financial Control committee</template>
+	  </category>
+	  <category>
+	    <pattern>PhD</pattern>
+	    <template>Doctor of Philosophy </template>
+	  </category>
+	  <category>
+	    <pattern>PLATO</pattern>
+	    <template>Management P&amp;L system</template>
+	  </category>
+	  <category>
+	    <pattern>PNB</pattern>
+	    <template>Produit Net Bancaire</template>
+	  </category>
+	  <category>
+	    <pattern>PnL</pattern>
+	    <template>Profit and Loss</template>
+	  </category>
+	  <category>
+	    <pattern>PNLC</pattern>
+	    <template>EQD Pricing system</template>
+	  </category>
+	  <category>
+	    <pattern>POWER</pattern>
+	    <template>EQD Booking system – vanilla products</template>
+	  </category>
+	  <category>
+	    <pattern>PRCM</pattern>
+	    <template>Position Risk Control Management</template>
+	  </category>
+	  <category>
+	    <pattern>PRIMO</pattern>
+	    <template>EQD economic P&amp;L database system</template>
+	  </category>
+	  <category>
+	    <pattern>PRISM</pattern>
+	    <template>Portfolio Risk and Investment Systems Management</template>
+	  </category>
+	  <category>
+	    <pattern>Prop</pattern>
+	    <template>Proprietary</template>
+	  </category>
+	  <category>
+	    <pattern>PTF</pattern>
+	    <template>Portfolio</template>
+	  </category>
+	  <category>
+	    <pattern>PV</pattern>
+	    <template>Present Value</template>
+	  </category>
+	  <category>
+	    <pattern>pValue</pattern>
+	    <template>Critère de significativité des variables de régression</template>
+	  </category>
+	  <category>
+	    <pattern>Q</pattern>
+	    <template>Quarter</template>
+	  </category>
+	  <category>
+	    <pattern>QGSV</pattern>
+	    <template>Quadratic Gaussian Stochastic Volatility</template>
+	  </category>
+	  <category>
+	    <pattern>QIS</pattern>
+	    <template>Quantitative Impact Study</template>
+	  </category>
+	  <category>
+	    <pattern>QRM</pattern>
+	    <template>Quantitative Risk Management. Système de pilotage de l’ALM Bank of the West</template>
+	  </category>
+	  <category>
+	    <pattern>R2</pattern>
+	    <template>Critère de significativité d’une régression linéaire</template>
+	  </category>
+	  <category>
+	    <pattern>RAID</pattern>
+	    <template>Data Matching tool</template>
+	  </category>
+	  <category>
+	    <pattern>RAMP</pattern>
+	    <template>Fixed Income market data library</template>
+	  </category>
+	  <category>
+	    <pattern>R-BDEL</pattern>
+	    <template>Risk-Banque de Détail et des Entreprises à Luxembourg</template>
+	  </category>
+	  <category>
+	    <pattern>RCM</pattern>
+	    <template>Risk Capital Markets (now Risk-IM)</template>
+	  </category>
+	  <category>
+	    <pattern>R-CM</pattern>
+	    <template>Risk Capital Markets (now Risk-IM)</template>
+	  </category>
+	  <category>
+	    <pattern>R-CM PAT</pattern>
+	    <template>Portfolio Analysis Team</template>
+	  </category>
+	  <category>
+	    <pattern>R-CM RCA</pattern>
+	    <template>Risk Calculation Analysis</template>
+	  </category>
+	  <category>
+	    <pattern>R-CM RS</pattern>
+	    <template>Risk Systems</template>
+	  </category>
+	  <category>
+	    <pattern>R-CM TAT</pattern>
+	    <template>Transaction Analysis Team</template>
+	  </category>
+	  <category>
+	    <pattern>RCR</pattern>
+	    <template>Rapprochement comptabilité-risque</template>
+	  </category>
+	  <category>
+	    <pattern>RCS</pattern>
+	    <template>Risk Calculation &amp; Systems </template>
+	  </category>
+	  <category>
+	    <pattern>RE</pattern>
+	    <template>Regulatory Expertise</template>
+	  </category>
+	  <category>
+	    <pattern>Repo</pattern>
+	    <template>Repurchase Agreement</template>
+	  </category>
+	  <category>
+	    <pattern>Resp</pattern>
+	    <template>Responsable</template>
+	  </category>
+	  <category>
+	    <pattern>R-IRB</pattern>
+	    <template>Risk-International Retail Banking</template>
+	  </category>
+	  <category>
+	    <pattern>R-IS</pattern>
+	    <template>Risk-Investment Solutions</template>
+	  </category>
+	  <category>
+	    <pattern>Risk IS</pattern>
+	    <template>Risk Investment Solutions</template>
+	  </category>
+	  <category>
+	    <pattern>Risk-IM</pattern>
+	    <template>Risk Investment and Markets</template>
+	  </category>
+	  <category>
+	    <pattern>RO</pattern>
+	    <template>Risque opérationnel</template>
+	  </category>
+	  <category>
+	    <pattern>ROE</pattern>
+	    <template>Return on equity </template>
+	  </category>
+	  <category>
+	    <pattern>ROIE</pattern>
+	    <template>Return on invested equity </template>
+	  </category>
+	  <category>
+	    <pattern>RONE</pattern>
+	    <template>Return on notional equity </template>
+	  </category>
+	  <category>
+	    <pattern>RPC</pattern>
+	    <template>Risk Policy Committee</template>
+	  </category>
+	  <category>
+	    <pattern>R-PF</pattern>
+	    <template>Risk-Personal Finance</template>
+	  </category>
+	  <category>
+	    <pattern>R-PM</pattern>
+	    <template>Risk-Portfolio Management </template>
+	  </category>
+	  <category>
+	    <pattern>RPO</pattern>
+	    <template>Repo</template>
+	  </category>
+	  <category>
+	    <pattern>RR</pattern>
+	    <template>Risk Reversal</template>
+	  </category>
+	  <category>
+	    <pattern>RRP</pattern>
+	    <template>Model parameter governing the ratio between the 10-delta and the 25-delta risk reversals</template>
+	  </category>
+	  <category>
+	    <pattern>RWA</pattern>
+	    <template>Risk-Weighted Assets</template>
+	  </category>
+	  <category>
+	    <pattern>SABR</pattern>
+	    <template>"Stochastic alpha, beta, rho", SABR model is a stochastic volatility model, which attempts to capture the volatility smile in derivatives markets.</template>
+	  </category>
+	  <category>
+	    <pattern>SABRAF</pattern>
+	    <template>Sigma Alpha Beta Rho Arbitrage Free</template>
+	  </category>
+	  <category>
+	    <pattern>SALT</pattern>
+	    <template>Shared ALM/SMC Liquidity Team</template>
+	  </category>
+	  <category>
+	    <pattern>SBO</pattern>
+	    <template>Senior Business Officer </template>
+	  </category>
+	  <category>
+	    <pattern>SCO</pattern>
+	    <template>Senior Credit Officer</template>
+	  </category>
+	  <category>
+	    <pattern>SE</pattern>
+	    <template>Structured Equities</template>
+	  </category>
+	  <category>
+	    <pattern>SEK</pattern>
+	    <template>Swedish Krone </template>
+	  </category>
+	  <category>
+	    <pattern>SEKOIA</pattern>
+	    <template>ALM-T front office booking system - bonds</template>
+	  </category>
+	  <category>
+	    <pattern>SG</pattern>
+	    <template>Société Générale </template>
+	  </category>
+	  <category>
+	    <pattern>SGD</pattern>
+	    <template>Singapore Dollar</template>
+	  </category>
+	  <category>
+	    <pattern>SLA</pattern>
+	    <template>Service Level Agreement</template>
+	  </category>
+	  <category>
+	    <pattern>SLAB</pattern>
+	    <template>Stock Lending and Borrowing</template>
+	  </category>
+	  <category>
+	    <pattern>SMC</pattern>
+	    <template>Strategic Management Control</template>
+	  </category>
+	  <category>
+	    <pattern>SMP</pattern>
+	    <template>Senior Management Position</template>
+	  </category>
+	  <category>
+	    <pattern>SO</pattern>
+	    <template>Système Opération</template>
+	  </category>
+	  <category>
+	    <pattern>SOCRATES</pattern>
+	    <template>Reconciliation tool</template>
+	  </category>
+	  <category>
+	    <pattern>SOHO</pattern>
+	    <template>Fixed Income front office booking system – FX options</template>
+	  </category>
+	  <category>
+	    <pattern>SONIA</pattern>
+	    <template>Sterling Overnight Index Average</template>
+	  </category>
+	  <category>
+	    <pattern>SPD</pattern>
+	    <template>Structured Products</template>
+	  </category>
+	  <category>
+	    <pattern>SPOC</pattern>
+	    <template>Single Point of Contact</template>
+	  </category>
+	  <category>
+	    <pattern>SPS</pattern>
+	    <template>Structure Product Solution</template>
+	  </category>
+	  <category>
+	    <pattern>SPV</pattern>
+	    <template>Special Purpose Vehicle </template>
+	  </category>
+	  <category>
+	    <pattern>SSO</pattern>
+	    <template>Single sign-on</template>
+	  </category>
+	  <category>
+	    <pattern>STA</pattern>
+	    <template>Méthode Standard</template>
+	  </category>
+	  <category>
+	    <pattern>Stag.</pattern>
+	    <template>Stagiaire</template>
+	  </category>
+	  <category>
+	    <pattern>STAR</pattern>
+	    <template>Fixed Income front office booking system – vanilla options</template>
+	  </category>
+	  <category>
+	    <pattern>SteerCo </pattern>
+	    <template>Steering Committees</template>
+	  </category>
+	  <category>
+	    <pattern>STIR</pattern>
+	    <template>Short-term interest rate</template>
+	  </category>
+	  <category>
+	    <pattern>STK</pattern>
+	    <template>Stock</template>
+	  </category>
+	  <category>
+	    <pattern>STP</pattern>
+	    <template>Straight Through Process</template>
+	  </category>
+	  <category>
+	    <pattern>SVN</pattern>
+	    <template>Subversion, a software versioning system</template>
+	  </category>
+	  <category>
+	    <pattern>SW</pattern>
+	    <template>Switzerland</template>
+	  </category>
+	  <category>
+	    <pattern>T1</pattern>
+	    <template>Trimestre 1 </template>
+	  </category>
+	  <category>
+	    <pattern>TAC</pattern>
+	    <template>Transaction Approval Committee</template>
+	  </category>
+	  <category>
+	    <pattern>TARF</pattern>
+	    <template>Titres à revenus fixes</template>
+	  </category>
+	  <category>
+	    <pattern>TAT</pattern>
+	    <template>Transaction Analysis Team</template>
+	  </category>
+	  <category>
+	    <pattern>TCI</pattern>
+	    <template>Taux de Cession Interne</template>
+	  </category>
+	  <category>
+	    <pattern>TDP</pattern>
+	    <template>Top Development Program</template>
+	  </category>
+	  <category>
+	    <pattern>TMV</pattern>
+	    <template>Trader Marketer Violation</template>
+	  </category>
+	  <category>
+	    <pattern>TRANSCOM</pattern>
+	    <template>Murex Documentation System</template>
+	  </category>
+	  <category>
+	    <pattern>TRM</pattern>
+	    <template>Territory Risk Manager </template>
+	  </category>
+	  <category>
+	    <pattern>TS</pattern>
+	    <template>Termsheet</template>
+	  </category>
+	  <category>
+	    <pattern>TWD</pattern>
+	    <template>Taiwan Dollar</template>
+	  </category>
+	  <category>
+	    <pattern>UAC</pattern>
+	    <template>User Access Control</template>
+	  </category>
+	  <category>
+	    <pattern>UBS</pattern>
+	    <template>Union Bank of Switzerland</template>
+	  </category>
+	  <category>
+	    <pattern>UGO</pattern>
+	    <template>Unité de Gestion Organisationnelle </template>
+	  </category>
+	  <category>
+	    <pattern>UK</pattern>
+	    <template>United Kingdom</template>
+	  </category>
+	  <category>
+	    <pattern>Uncollat </pattern>
+	    <template>Uncollateralised </template>
+	  </category>
+	  <category>
+	    <pattern>US</pattern>
+	    <template>United States</template>
+	  </category>
+	  <category>
+	    <pattern>USD</pattern>
+	    <template>United States Dollar</template>
+	  </category>
+	  <category>
+	    <pattern>V&amp;RC</pattern>
+	    <template>Valuation and Risk Control</template>
+	  </category>
+	  <category>
+	    <pattern>Vanna</pattern>
+	    <template>Sensitivity of the option delta with respect to change in volatility</template>
+	  </category>
+	  <category>
+	    <pattern>Var</pattern>
+	    <template>Variance</template>
+	  </category>
+	  <category>
+	    <pattern>VaR </pattern>
+	    <template>Value at Risk</template>
+	  </category>
+	  <category>
+	    <pattern>VB</pattern>
+	    <template>Visual Basic</template>
+	  </category>
+	  <category>
+	    <pattern>Vega</pattern>
+	    <template>Sensitivity to volatility</template>
+	  </category>
+	  <category>
+	    <pattern>VIE</pattern>
+	    <template>Volontariat en Entreprise </template>
+	  </category>
+	  <category>
+	    <pattern>VMC</pattern>
+	    <template>Valuation Methodology Committee</template>
+	  </category>
+	  <category>
+	    <pattern>VMCP</pattern>
+	    <template>Valuation Methodology Control Policy</template>
+	  </category>
+	  <category>
+	    <pattern>VME</pattern>
+	    <template>Valuation Methodology Event</template>
+	  </category>
+	  <category>
+	    <pattern>Vol</pattern>
+	    <template>Volatility</template>
+	  </category>
+	  <category>
+	    <pattern>Volga</pattern>
+	    <template>Sensitivity to vega as volatility changes</template>
+	  </category>
+	  <category>
+	    <pattern>VRC</pattern>
+	    <template>Valuation Review Committee</template>
+	  </category>
+	  <category>
+	    <pattern>WDD</pattern>
+	    <template>Watch list Default Debt</template>
+	  </category>
+	  <category>
+	    <pattern>WEST</pattern>
+	    <template>Fixed Income pricing system</template>
+	  </category>
+	  <category>
+	    <pattern>Westminster</pattern>
+	    <template>Library of pricing and risk management functionss for vanilla interest rate derivatives and bonds</template>
+	  </category>
+	  <category>
+	    <pattern>Winfront</pattern>
+	    <template>EQD front office booking system</template>
+	  </category>
+	  <category>
+	    <pattern>WL</pattern>
+	    <template>Watch List </template>
+	  </category>
+	  <category>
+	    <pattern>WM</pattern>
+	    <template>Wealth Management</template>
+	  </category>
+	  <category>
+	    <pattern>WMI</pattern>
+	    <template>Wealth Management International</template>
+	  </category>
+	  <category>
+	    <pattern>WTI</pattern>
+	    <template>West Texas Intermediate</template>
+	  </category>
+	  <category>
+	    <pattern>ARC</pattern>
+	    <template>Analyste Risques  Corporate </template>
+	  </category>
+	  <category>
+	    <pattern>ARP</pattern>
+	    <template>Analyste Risques de Proximité </template>
+	  </category>
+	  <category>
+	    <pattern>ASR</pattern>
+	    <template>Affaires Spéciales et Recouvrement </template>
+	  </category>
+	  <category>
+	    <pattern>ARH</pattern>
+	    <template>Assistant€ Ressources Humaines</template>
+	  </category>
+	  <category>
+	    <pattern>BA</pattern>
+	    <template>Business Analyst</template>
+	  </category>
+	  <category>
+	    <pattern>BAQ</pattern>
+	    <template>Banque Au Quotidien</template>
+	  </category>
+	  <category>
+	    <pattern>BPAF</pattern>
+	    <template>Banque Privée Actionnariat Familial </template>
+	  </category>
+	  <category>
+	    <pattern>BPGF</pattern>
+	    <template>Banque Privée Grandes Fortunes </template>
+	  </category>
+	  <category>
+	    <pattern>CAC</pattern>
+	    <template>Chargé d'Administration du Crédit </template>
+	  </category>
+	  <category>
+	    <pattern>CAC BP</pattern>
+	    <template>Chargé d'Administration du Crédit Banque Privée </template>
+	  </category>
+	  <category>
+	    <pattern>CAMR </pattern>
+	    <template>Chargé d'appui à la Maitrise  des Risques </template>
+	  </category>
+	  <category>
+	    <pattern>CAPI</pattern>
+	    <template>Chargé d'affaires des Professionnels de l'immobilier </template>
+	  </category>
+	  <category>
+	    <pattern>CAR</pattern>
+	    <template>Chargé d'Appui Risques </template>
+	  </category>
+	  <category>
+	    <pattern>CBPE</pattern>
+	    <template>Centre Banque Privée Entreprises </template>
+	  </category>
+	  <category>
+	    <pattern>CBL</pattern>
+	    <template>Conseiller Banque En Ligne</template>
+	  </category>
+	  <category>
+	    <pattern>CCR</pattern>
+	    <template>Conseiller Client Régional</template>
+	  </category>
+	  <category>
+	    <pattern>CDP</pattern>
+	    <template>Chef de Projet</template>
+	  </category>
+	  <category>
+	    <pattern>CG</pattern>
+	    <template>Controleur de Gestion </template>
+	  </category>
+	  <category>
+	    <pattern>CGCM</pattern>
+	    <template>Chargé de Gestion Cash Management </template>
+	  </category>
+	  <category>
+	    <pattern>CHSCT</pattern>
+	    <template>Comité D'hygiéne de Sécurité et de Conditions de Travail </template>
+	  </category>
+	  <category>
+	    <pattern>Compliance FRB</pattern>
+	    <template>Compliance French Retail Banking </template>
+	  </category>
+	  <category>
+	    <pattern>Copil</pattern>
+	    <template>Comité de Pilotage</template>
+	  </category>
+	  <category>
+	    <pattern>Costrat</pattern>
+	    <template>Comité Stratégique</template>
+	  </category>
+	  <category>
+	    <pattern>CP Premium</pattern>
+	    <template>Conseiller Patrimonial Premium pour les non résidents </template>
+	  </category>
+	  <category>
+	    <pattern>CPNR</pattern>
+	    <template>Conseiller Patrimonial non résident </template>
+	  </category>
+	  <category>
+	    <pattern>CRD</pattern>
+	    <template>Chargé des Risques Difficiles </template>
+	  </category>
+	  <category>
+	    <pattern>CRMR</pattern>
+	    <template>Chargé Régional de la Maitrise des Risques </template>
+	  </category>
+	  <category>
+	    <pattern>CRR</pattern>
+	    <template>Chargé de Renfort Regional</template>
+	  </category>
+	  <category>
+	    <pattern>CSB</pattern>
+	    <template>Conseiller en solution Budgétaire </template>
+	  </category>
+	  <category>
+	    <pattern>CSI</pattern>
+	    <template>Conseiller spécialisé Immobilier   </template>
+	  </category>
+	  <category>
+	    <pattern>DCAF</pattern>
+	    <template>Directeur de Centre d'Affaires Entreprises </template>
+	  </category>
+	  <category>
+	    <pattern>DCR</pattern>
+	    <template>Décideur Commercial Risques </template>
+	  </category>
+	  <category>
+	    <pattern>DGPAC</pattern>
+	    <template>Directeur de Groupement de Production et d'Appui Commercial </template>
+	  </category>
+	  <category>
+	    <pattern>DIG</pattern>
+	    <template>Diercteur de Groupe d'exploitation </template>
+	  </category>
+	  <category>
+	    <pattern>EDB</pattern>
+	    <template>Expression Des Besoins</template>
+	  </category>
+	  <category>
+	    <pattern>FS</pattern>
+	    <template>Financements structurés </template>
+	  </category>
+	  <category>
+	    <pattern>GI</pattern>
+	    <template>Gestionnaire Individuelle de carrière</template>
+	  </category>
+	  <category>
+	    <pattern>IC</pattern>
+	    <template>Incitations Commerciales</template>
+	  </category>
+	  <category>
+	    <pattern>IP</pattern>
+	    <template>Ingénieur Patrimonial</template>
+	  </category>
+	  <category>
+	    <pattern>IRP</pattern>
+	    <template>Instances Représentatives Du Personnel</template>
+	  </category>
+	  <category>
+	    <pattern>NDC</pattern>
+	    <template>Note De Cadrage</template>
+	  </category>
+	  <category>
+	    <pattern>PA</pattern>
+	    <template>Plan d'Action</template>
+	  </category>
+	  <category>
+	    <pattern>PF</pattern>
+	    <template>Personnal Finance</template>
+	  </category>
+	  <category>
+	    <pattern>PFAI</pattern>
+	    <template>Plate-Forme d'Assistance des Incidents</template>
+	  </category>
+	  <category>
+	    <pattern>PNCC</pattern>
+	    <template>Pôle National Conformité Corporate </template>
+	  </category>
+	  <category>
+	    <pattern>PNACC</pattern>
+	    <template>Pôle National D'Assistance Commerciale Corporate </template>
+	  </category>
+	  <category>
+	    <pattern>PRA</pattern>
+	    <template>Pôle Régional d'Analyse </template>
+	  </category>
+	  <category>
+	    <pattern>PRC</pattern>
+	    <template>Pôle Régional de Contrôle </template>
+	  </category>
+	  <category>
+	    <pattern>PRCP</pattern>
+	    <template>Pôle Régional Conformité  Proximité </template>
+	  </category>
+	  <category>
+	    <pattern>PRSC</pattern>
+	    <template>Pôle Régional de soutien au Commerce </template>
+	  </category>
+	  <category>
+	    <pattern>QRC</pattern>
+	    <template>Qualité Relation Client </template>
+	  </category>
+	  <category>
+	    <pattern>RCER</pattern>
+	    <template>Responsable Clientèle Entrepreneurs </template>
+	  </category>
+	  <category>
+	    <pattern>RCR</pattern>
+	    <template>Responsable Conformité Régionale </template>
+	  </category>
+	  <category>
+	    <pattern>RDCE</pattern>
+	    <template>Responsable Développement Commercial Entreprises </template>
+	  </category>
+	  <category>
+	    <pattern>RDCP</pattern>
+	    <template>Reponsable Developpement Commercial Banque de Proxi </template>
+	  </category>
+	  <category>
+	    <pattern>RF</pattern>
+	    <template>Responsable de Formation</template>
+	  </category>
+	  <category>
+	    <pattern>RGC</pattern>
+	    <template>Responsable Contrôle de Gestion </template>
+	  </category>
+	  <category>
+	    <pattern>Risk FRB</pattern>
+	    <template>Risk French Retail Banking </template>
+	  </category>
+	  <category>
+	    <pattern>RPA</pattern>
+	    <template>Responsable de Patrimoine Applicatif</template>
+	  </category>
+	  <category>
+	    <pattern>RPMR</pattern>
+	    <template>Responsable du Pilotage de la Maitrise des Risques   </template>
+	  </category>
+	  <category>
+	    <pattern>RPRA</pattern>
+	    <template>Responsable  du Pôle  Régional d'Analyse (corporate et Proxi)</template>
+	  </category>
+	  <category>
+	    <pattern>RRR</pattern>
+	    <template>Responsable Régional des Risques </template>
+	  </category>
+	  <category>
+	    <pattern>RSE</pattern>
+	    <template>Responsabilité Sociale et Environnementale</template>
+	  </category>
+	  <category>
+	    <pattern>RT</pattern>
+	    <template>Relais de Transformation</template>
+	  </category>
+	  <category>
+	    <pattern>SDMR</pattern>
+	    <template>Salle des Marches Régionaux</template>
+	  </category>
+	</aiml>
