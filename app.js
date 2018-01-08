@@ -99,27 +99,10 @@ const isDefinitionTypeDialog = (intents,entities) => {
 };
 
 const displayError = (e) => console.error(e);
-const isConversationExist = session=> session.hasOwnProperty('idConversationWatson');
 
-const handleWatsionConversation = (idConversationSkype, response) =>{
-    let session = getSession(idConversationSkype);
-    if(!isConversationExist(session)){
-        session.idConversationWatson = response.context.conversation_id;
-    }
-};
 //handle routes
 server.post('/message',function(req,res,next){
     let clientMessage = req.body.message;
-    let conversationId = req.body.conversationId;
-    let senderDisplayName = req.body.senderDisplayName;
-    if(!isUserExist(conversationId)){
-        //ajoouter l'id dans la liste de sessions
-        sessions.push({
-            idSessionSkype : conversationId,
-            senderDisplayName : '123watson'
-        });
-    }
-
     sendMessageWatson(clientMessage)
     .then(response => {
         let botResponse = getBotResponse(response);
